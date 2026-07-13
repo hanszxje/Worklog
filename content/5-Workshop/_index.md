@@ -22,3 +22,4 @@ The system is designed to optimize inventory management by forecasting customer 
 4. [Model Training & Storage](5.4-Model-training/)
 5. [Forecast API & Scheduling](5.5-Model-api/)
 6. [Resource Cleanup](5.6-Resource-cleanup/)
+7. [Project Demo](5.7-Demo/)

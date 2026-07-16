@@ -1,14 +1,31 @@
 ---
 title: "S3 Bucket Removal"
 date: 2024-07-07
-weight: 4
+weight: 3
 chapter: false
-pre: " <b> 5.9.3. </b> "
+pre : " <b> 5.9.3. </b> "
 ---
 
 ### 5.9.3. Purging and Deleting Amazon S3 Buckets
 
+Amazon S3 requires all objects inside a bucket to be permanently deleted before the bucket itself can be removed. Follow the steps below:
+
 1. Open the **Amazon S3 Console**.
-2. Select the model storage bucket `fashion-retail-model-storage` and scripts buckets.
-3. Click **Empty** to delete all files in the bucket (AWS S3 requires a bucket to be completely empty before it can be deleted).
-4. Once the bucket is empty, select the bucket again and click **Delete** to remove it from your AWS account.
+2. Locate and click on the machine learning model storage bucket: `fashion-retail-model-storage` (or the GenAI product images bucket, e.g., `fashion-product-images-group3979`).
+3. Click the **Empty** button at the top menu:
+   * Type `permanently delete` in the confirmation box to confirm purging all objects (including `.pkl` files in the `models/` directory).
+   * Click **Empty** to complete the purge.
+4. Go back to the Buckets list, select the emptied bucket, and click the **Delete** button:
+   * Type the exact bucket name to confirm deletion.
+   * Click **Delete bucket** to release the resource.
+
+---
+
+#### Verification on Amazon S3:
+
+##### 1. Emptying S3 Bucket:
+![S3 Empty](/images/5-Workshop/5.9-Resource-cleanup/s3-empty.png)
+
+##### 2. Deleting S3 Bucket:
+![S3 Delete](/images/5-Workshop/5.9-Resource-cleanup/s3-delete.png)
+

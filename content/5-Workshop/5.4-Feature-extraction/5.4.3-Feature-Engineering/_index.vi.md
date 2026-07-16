@@ -1,70 +1,21 @@
 ---
 title: "Script Spark ETL kỹ nghệ đặc trưng"
 date: 2024-07-07
-weight: 4
+weight : 4
 chapter: false
-pre: " <b> 5.4.3. </b> "
+pre : " <b> 5.4.3. </b> "
 ---
 
 ### 5.4.3. Script Spark ETL Kỹ nghệ Đặc trưng (`glue_feature_engineering.py`)
 
-Tác vụ chính được thực hiện bằng **Apache Spark** trên **AWS Glue** để tính toán các đặc trưng chuỗi thời gian cho hàng triệu điểm dữ liệu.
+Tác vụ chính được thực hiện bằng **Apache Spark** trên **AWS Glue** để tính toán các đặc trưng chuỗi thời gian phục vụ trực tiếp cho huấn luyện mô hình.
 
-##### Phân đoạn mã nguồn Spark SQL cốt lõi:
+#### Các bước cấu hình Spark ETL Job:
 
-#### 1. Trích xuất đặc trưng trễ (Lags):
-Tính toán lượng hàng đã bán trong quá khứ ($t-1$ và $t-7$) để mô hình nắm bắt được xu hướng tiêu thụ gần nhất:
-```python
-w_sku = Window.partitionBy('store_id', 'sku').orderBy('date_int')
+1. Để kết nối với PostgreSQL RDS, chúng ta tải file PostgreSQL JDBC Driver `postgresql-42.7.3.jar` lên thư mục S3, sau đó khai báo đường dẫn tại **Job details** -> **Libraries** -> **Dependent jars path**.
 
-daily = daily \
-    .withColumn('lag_1d', F.lag('qty', 1, 0.0).over(w_sku).cast(FloatType())) \
-    .withColumn('lag_7d', F.lag('qty', 7, 0.0).over(w_sku).cast(FloatType()))
-```
+![Cấu hình Dependent Jars Path](/images/5-Workshop/5.4-Feature-extraction/5.4.3-step04-dependent-jars.png)
 
-#### 2. Tính trung bình trượt (Rolling statistics):
-Tính trung bình doanh số và độ lệch chuẩn doanh số của sản phẩm trong vòng 7 ngày gần nhất:
-```python
-w_roll7 = Window.partitionBy('store_id', 'sku') \
-    .orderBy('date_int').rangeBetween(-7, -1)
+2. Copy nội dung mã nguồn của Spark ETL từ [glue_feature_engineering.py](file:///d:/b%C3%A1o%20c%C3%A1o%20AWS/source_code/glue_feature_engineering.py) dán vào trình soạn thảo Script của Glue Job.
 
-daily = daily \
-    .withColumn('rolling_mean_7d',
-        F.round(F.avg('qty').over(w_roll7), 4).cast(FloatType())
-    ) \
-    .withColumn('rolling_std_7d',
-        F.round(F.stddev('qty').over(w_roll7), 4).cast(FloatType())
-    )
-```
-
-#### 3. Tính tốc độ bán hàng (Sales Velocity):
-Đo lường số ngày sản phẩm bán được hàng trong vòng 30 ngày và tính tỷ lệ bán hàng trung bình mỗi ngày:
-```python
-w30 = Window.partitionBy('store_id','sku').orderBy('date_int').rangeBetween(-30,-1)
-
-daily = daily \
-    .withColumn('s_days_active',        F.count('qty').over(w30).cast(FloatType())) \
-    .withColumn('s_selling_days_count', F.count('qty').over(w30).cast(FloatType())) \
-    .withColumn('_q30', F.sum('qty').over(w30)) \
-    .withColumn('s_sales_velocity',
-        F.round(F.col('_q30') / F.greatest(F.col('s_days_active'), F.lit(1.0)), 4)
-         .cast(FloatType())
-    ).drop('_q30')
-```
-
-#### 4. Tải dữ liệu đặc trưng xuống cả hai Databases qua JDBC:
-```python
-# Ghi vào Central DB
-final_df.coalesce(4).write.jdbc(
-    JDBC_URL, 'final_daily',
-    mode='append',
-    properties=JDBC_WRITE_PROPS
-)
-
-# Ghi vào Training DB
-final_df.coalesce(4).write.jdbc(
-    TRAINING_JDBC_URL, 'final_daily',
-    mode='append',
-    properties=JDBC_WRITE_PROPS
-)
-```
+![Nhập mã nguồn Spark trong Script editor](/images/5-Workshop/5.4-Feature-extraction/5.4.3-step05-spark-code.png)

@@ -1,13 +1,30 @@
 ---
-title: "EC2 Instance Termination"
+title: "EC2 Resource Cleanup"
 date: 2024-07-07
 weight: 1
 chapter: false
-pre: " <b> 5.9.1. </b> "
+pre : " <b> 5.9.1. </b> "
 ---
 
-### 5.9.1. Terminating Amazon EC2 Compute Instances
+### 5.9.1. EC2 Resource Cleanup
 
-1. Open the **Amazon EC2 Console** and click **Instances**.
-2. Select the instances: `Web-Application-Server`, `fashion-api-server`, and `ML-Forecast-Server` (or delete their parent Auto Scaling Groups).
-3. Click **Instance state** -> Select **Terminate instance** to delete the compute servers and release their associated EBS volumes.
+To avoid ongoing computational costs from virtual machines and their attached EBS storage volumes, perform the cleanup steps below:
+
+1. Open the **Amazon EC2 Console** -> **Instances**.
+2. Locate and check the checkboxes for the following project instances:
+   * `Web-Application-Server` (Kiet's Frontend Server)
+   * `fashion-api-server` (Tung's RESTful API Server)
+   * `ML-Forecast-Server` (Thanh's Machine Learning Server)
+3. Click the **Instance state** button at the top menu -> Select **Terminate instance**.
+4. Confirm by clicking **Terminate** in the confirmation pop-up.
+
+> [!NOTE]
+> * The instance states will transition to `Shutting-down` and eventually to `Terminated`.
+> * Attached EBS (Elastic Block Store) volumes configured with "Delete on termination" will be automatically deleted to prevent persistent storage fees.
+
+
+---
+
+#### EC2 Resource Cleanup Evidence:
+
+![EC2 Terminate](/images/5-Workshop/5.9-Resource-cleanup/ec2-terminate.png)

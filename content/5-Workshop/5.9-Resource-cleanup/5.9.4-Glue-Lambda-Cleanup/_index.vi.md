@@ -1,19 +1,45 @@
 ---
 title: "Xóa AWS Glue & Lambda"
 date: 2024-07-07
-weight: 5
+weight: 4
 chapter: false
-pre: " <b> 5.9.4. </b> "
+pre : " <b> 5.9.4. </b> "
 ---
 
-### 5.9.4. Xóa các tác vụ Glue Jobs và Lambda Functions
+### 5.9.4. Xóa các tác vụ Glue Jobs, Lambda Functions và ECR Repositories
 
-1. Mở trang quản lý **AWS Glue Studio** -> **ETL jobs**, chọn và xóa hai job `de-fashion-rds-extract` và `glue_feature_engineering.py`.
-2. Mở trang **AWS Lambda Console** và xóa hàm Lambda cung cấp Model API.
-3. Mở trang **Amazon EventBridge** -> **Rules** và xóa quy tắc lập lịch tự động hàng ngày (Daily Schedule Rule).
+Bước cuối cùng là dọn dẹp các dịch vụ serverless tính toán và điều phối lịch trình:
+
+1. **AWS Glue:**
+   * Mở trang quản lý **AWS Glue Studio** -> **ETL jobs**. Chọn và xóa các job `de-fashion-rds-extract` và `glue_feature_engineering.py`.
+   * Mở phần **Connections** trong AWS Glue, chọn và xóa các Connection kết nối tới các RDS PostgreSQL database.
+2. **AWS Lambda:**
+   * Mở trang **AWS Lambda Console** -> **Functions**.
+   * Chọn hàm Lambda `FashionDemandForecastAPI` (và hàm `DailyForecastTrigger` nếu có), click **Actions** -> Chọn **Delete**.
+3. **Amazon ECR:**
+   * Mở trang **Amazon ECR Console** -> **Repositories**.
+   * Chọn repository `fashion-demand-predictor`, nhấp **Delete** và nhập `delete` để xác nhận xóa hoàn toàn Docker image (tránh phát sinh chi phí lưu trữ tệp image lớn).
+4. **Amazon EventBridge Scheduler:**
+   * Mở trang **Amazon EventBridge Console** -> **Schedules** (hoặc **Rules**).
+   * Chọn daily schedule rule của dự án (ví dụ: `DailyForecastTriggerSchedule`), nhấp **Delete** để hủy lập lịch tự động.
 
 ---
 
 {{% notice warning %}}
-⚠️ **Cảnh báo dữ liệu:** Sau khi thực hiện xóa cơ sở dữ liệu RDS và các S3 Buckets, toàn bộ dữ liệu lịch sử giao dịch và các file mô hình sẽ bị **xóa vĩnh viễn** và không thể khôi phục. Hãy chắc chắn bạn đã ghi lại đầy đủ thông tin số liệu cần thiết trước khi thực hiện các bước trên.
+⚠️ **Cảnh báo dữ liệu:** Sau khi thực hiện xóa cơ sở dữ liệu RDS, các S3 Buckets, ECR Repositories và Lambda, toàn bộ dữ liệu giao dịch lịch sử, đặc trưng và tệp mô hình máy học đóng gói sẽ bị **xóa vĩnh viễn** và không thể phục hồi. Hãy chắc chắn bạn đã lưu trữ hoặc báo cáo tất cả các thông tin chỉ số cần thiết trước khi thực hiện dọn dẹp.
 {{% /notice %}}
+
+
+
+---
+
+#### Minh chứng dọn dẹp Glue & Lambda:
+
+##### 1. Xóa Glue ETL Jobs:
+![Glue Delete](/images/5-Workshop/5.9-Resource-cleanup/glue-delete.png)
+
+##### 2. Xóa Lambda Function:
+![Lambda Delete](/images/5-Workshop/5.9-Resource-cleanup/lambda-delete.png)
+
+##### 3. Xóa ECR Repository:
+![ECR Delete](/images/5-Workshop/5.9-Resource-cleanup/ecr-delete.png)

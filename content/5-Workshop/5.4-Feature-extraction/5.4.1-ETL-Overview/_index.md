@@ -3,7 +3,7 @@ title: "ETL Architecture Overview"
 date: 2024-07-07
 weight: 1
 chapter: false
-pre: " <b> 5.4.1. </b> "
+pre : " <b> 5.4.1. </b> "
 ---
 
 ### 5.4.1. ETL Architecture Overview
@@ -20,7 +20,7 @@ graph TD
     ProcessedFeatures -->|3. Parallel Writes| TrainingDB[Training RDS]
 {{</mermaid>}}
 
-#### Detailed Operations:
+#### Data Processing Lifecycle:
 1. **Raw Data Extraction (Extract):** A Python Shell job queries the `fashion-rds` central database, fetches raw transactions, products, and stores tables, and dumps them as compressed Parquet files to an S3 staging area.
-2. **Feature Engineering (Transform):** A PySpark job reads raw files from S3, cleans values (calculating median prices for categories, missing colors), and uses **Window Functions** to build time-series analytics (lagged sales, moving averages, sales velocity).
+2. **Feature Engineering (Transform):** A PySpark job reads raw files from S3, cleans values, and uses Window Functions to build time-series analytics (lagged sales, moving averages, sales velocity).
 3. **Data Load (Load):** Persists the finished dataset parallelly back to both PostgreSQL databases.

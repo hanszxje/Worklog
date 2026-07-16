@@ -1,70 +1,21 @@
 ---
-title: "Spark Feature Engineering Script"
+title: "Spark ETL Feature Engineering Script"
 date: 2024-07-07
-weight: 4
+weight : 4
 chapter: false
-pre: " <b> 5.4.3. </b> "
+pre : " <b> 5.4.3. </b> "
 ---
 
-### 5.4.3. Spark Feature Engineering Script (`glue_feature_engineering.py`)
+### 5.4.3. Spark ETL Feature Engineering Script (`glue_feature_engineering.py`)
 
-The heavy-duty computations are calculated using **Apache Spark** running on **AWS Glue** to process large datasets.
+The core compute task is run via **Apache Spark** on **AWS Glue** to calculate historical time-series features.
 
-##### Core PySpark Snippets:
+#### Step-by-Step Configuration of Spark Job:
 
-#### 1. Lag Sales Features:
-Window functions partition by outlet and item (`store_id`, `sku`) and sort by time index to calculate lagged history:
-```python
-w_sku = Window.partitionBy('store_id', 'sku').orderBy('date_int')
+1. To connect Spark with PostgreSQL RDS, upload the PostgreSQL JDBC Driver `postgresql-42.7.3.jar` to S3, and enter the S3 path under **Job details** > **Libraries** > **Dependent jars path**.
 
-daily = daily \
-    .withColumn('lag_1d', F.lag('qty', 1, 0.0).over(w_sku).cast(FloatType())) \
-    .withColumn('lag_7d', F.lag('qty', 7, 0.0).over(w_sku).cast(FloatType()))
-```
+![Configure Dependent Jars Path](/images/5-Workshop/5.4-Feature-extraction/5.4.3-step04-dependent-jars.png)
 
-#### 2. Rolling averages:
-Computes average sales and sales deviation over a moving 7-day lookback window:
-```python
-w_roll7 = Window.partitionBy('store_id', 'sku') \
-    .orderBy('date_int').rangeBetween(-7, -1)
+2. Copy the Spark ETL code from [glue_feature_engineering.py](file:///d:/b%C3%A1o%20c%C3%A1o%20AWS/source_code/glue_feature_engineering.py) and paste it into the Glue Job script editor.
 
-daily = daily \
-    .withColumn('rolling_mean_7d',
-        F.round(F.avg('qty').over(w_roll7), 4).cast(FloatType())
-    ) \
-    .withColumn('rolling_std_7d',
-        F.round(F.stddev('qty').over(w_roll7), 4).cast(FloatType())
-    )
-```
-
-#### 3. Sales Velocity:
-Measures active days and sales velocities in 30-day and 7-day windows:
-```python
-w30 = Window.partitionBy('store_id','sku').orderBy('date_int').rangeBetween(-30,-1)
-
-daily = daily \
-    .withColumn('s_days_active',        F.count('qty').over(w30).cast(FloatType())) \
-    .withColumn('s_selling_days_count', F.count('qty').over(w30).cast(FloatType())) \
-    .withColumn('_q30', F.sum('qty').over(w30)) \
-    .withColumn('s_sales_velocity',
-        F.round(F.col('_q30') / F.greatest(F.col('s_days_active'), F.lit(1.0)), 4)
-         .cast(FloatType())
-    ).drop('_q30')
-```
-
-#### 4. Write to Targets:
-```python
-# Write to Central DB
-final_df.coalesce(4).write.jdbc(
-    JDBC_URL, 'final_daily',
-    mode='append',
-    properties=JDBC_WRITE_PROPS
-)
-
-# Write to Training DB
-final_df.coalesce(4).write.jdbc(
-    TRAINING_JDBC_URL, 'final_daily',
-    mode='append',
-    properties=JDBC_WRITE_PROPS
-)
-```
+![Paste Spark Script into Editor](/images/5-Workshop/5.4-Feature-extraction/5.4.3-step05-spark-code.png)

@@ -1,29 +1,31 @@
 ---
-title: "Training Database Provisioning"
+title: "Initialize Training Database"
 date: 2024-07-07
-weight: 3
+weight : 3
 chapter: false
-pre: " <b> 5.3.2. </b> "
+pre : " <b> 5.3.2. </b> "
 ---
 
-### 5.3.2. Provisioning the Training Database (`training-db`)
+### 5.3.2. Initialize Training Database (`training-db`)
 
-The dedicated feature store database used to hold aggregated dataset features is launched as a separate instance:
+A dedicated training database is used to store feature tables for machine learning workflows. Below is the step-by-step creation guide on the AWS Console:
 
-* **Engine Version:** PostgreSQL 18.3 (A newer major engine to support advanced analytics)
-* **Instance Class:** `db.t3.micro`
-* **DB Instance Identifier:** `training-db`
-* **Master Username:** `dbadmin`
-* **Allocated Storage:** 20 GiB (GP2 SSD)
-* **Database Name:** `fashiondb`
-* **VPC:** `vpc-0426acd9a3039dbc2`
+1. In the database creation interface (Standard create / PostgreSQL), under the **Engine Version** section, select the latest version **PostgreSQL 18.3**.
 
----
+![Select PostgreSQL Engine 18.3](/images/5-Workshop/5.3-Database-setup/5.3.2-step01-engine-postgresql18.png)
 
-#### AWS Console Configuration Steps
-1. On the **Amazon RDS** console, click **Create database**.
-2. Select **Standard create** and the **PostgreSQL** engine.
-3. Select version **PostgreSQL 18.3**.
-4. Choose **Free Tier** templates and set DB Instance Identifier to `training-db`.
-5. Set Master Username to `dbadmin` and enter your password.
-6. Match the VPC network configurations with the central database to ensure easy internal routing.
+2. Under the Settings section, set the DB instance identifier to `training-db` and enter the master username as `dbadmin`.
+
+![Configure Settings training-db](/images/5-Workshop/5.3-Database-setup/5.3.2-step02-settings-trainingdb.png)
+
+3. Under the Connectivity section, select the Default VPC, set Public access to **Yes**, and choose **Create new** VPC Security Group.
+
+![Configure Connectivity for training-db](/images/5-Workshop/5.3-Database-setup/5.3.2-step03-connectivity-public.png)
+
+4. Expand the Additional configuration section and enter the initial database name as `fashiondb`.
+
+![Configure Database Name fashiondb](/images/5-Workshop/5.3-Database-setup/5.3.2-step04-additional-fashiondb.png)
+
+5. After creation, check the RDS Databases list to verify that both `fashion-rds` and `training-db` instances are in the **Available** state.
+
+![RDS Databases List Available](/images/5-Workshop/5.3-Database-setup/5.3.2-step05-training-db-available.png)

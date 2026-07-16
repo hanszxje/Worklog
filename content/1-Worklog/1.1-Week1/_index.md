@@ -6,136 +6,136 @@ chapter: false
 pre: " <b> 1.1. </b> "
 ---
 
-# Work Log: Account Setup, AWS Credits, and Core Guided Labs
+# Work Log: Account Creation, Securing Credits, and Guided Hands-On Labs
 
-> **Week 1 - Monday, June 01, 2026:** Activated the AWS student account, requested initial credits, and successfully completed 5 foundational console tasks to secure additional promotional credits.
+> **Week 1 - Monday, June 01, 2026:** Registered for the AWS Educate/Student program, received initial credits, and finished 5 quick-start console labs to gain additional promo credits.
 
 ---
 
 ### Objectives for the Week
 
-- Register and configure a new AWS account, obtaining **$100 in initial credits** from the program.
-- Complete **5 practical tasks** on the AWS Console to earn an extra **$100 credit** ($20 per task).
-- gain initial familiarity with 5 foundational AWS services: EC2, Bedrock, Budgets, Lambda, and RDS.
-- Understand the basics of AWS billing controls, security configurations, and resource cleanup.
+- Successfully sign up for a personal AWS account and claim the **$100 introductory credit**.
+- Complete **5 guided activities** on the AWS Console to earn **$100 more** ($20 reward per activity).
+- Explore the console UI and learn the basic functionality of EC2, Bedrock, Budgets, Lambda, and RDS.
+- Understand how to track costs and clean up resources immediately after use.
 
 ---
 
-### Task 1: Launch an EC2 Virtual Machine (+$20 Credit)
+### Task 1: Provisioning a Virtual Machine via Amazon EC2 (Earned $20 Credit)
 
-**Objective:** Provision and manage a Linux-based Virtual Machine in the cloud.
+**Goal:** Create, test, and terminate a basic virtual server in the cloud.
 
-**Service Overview:** **Amazon EC2 (Elastic Compute Cloud)** provides resizable virtual computing capacity, enabling users to launch virtual servers with customized operating systems and networking.
+**Service Overview:** **Amazon EC2 (Elastic Compute Cloud)** offers scalable compute resources in the cloud. Users can fully customize the operating system, compute power (RAM/CPU), and firewall settings.
 
-**Steps Executed:**
-1. Navigate to the **AWS Console** → locate the **Explore AWS** home page widget → select the **Launch an instance using EC2** task.
-2. Select **Start activity** to initiate the guided lab.
-3. Configure the VM:
-   - Name tag: `FCA-Test-Server`
-   - OS Image (AMI): Standard Amazon Linux 2023 (Free Tier eligible).
-   - Instance Type: Keep default micro configuration (`t3.micro` or `t2.micro`).
-4. Generate a new cryptographic Key Pair for secure access:
+**Steps Performed:**
+1. Open the **AWS Console** → find the **Explore AWS** section on the home dashboard → select **Launch an instance using EC2**.
+2. Press **Start activity** to launch the lab instructions.
+3. Configure the virtual machine settings:
+   - Name tag: Set it to `FCA-Test-Server`.
+   - OS Image (AMI): Select Amazon Linux 2023 (Free Tier eligible).
+   - Instance Type: Choose the default micro option (`t2.micro` or `t3.micro`).
+4. Generate a cryptographic Key Pair for secure SSH connections:
    - Key pair name: `fca-keypair`
-   - Key pair type: **RSA**
-   - Private key file format: **.pem** (saved locally).
-5. Establish a Security Group with default rules allowing essential traffic.
-6. Verify configurations and select **Launch Instance**.
-7. **Verification Step:** Check the instance dashboard to confirm the instance status transitions to **Running** and passes the **2/2 status checks**.
-8. **Teardown (Crucial):** Select the instance → Instance State → **Terminate Instance** to stop resource consumption.
+   - Key type: **RSA**
+   - File format: **.pem** (download and store it locally).
+5. Establish a Security Group with standard rules to permit basic web traffic.
+6. Verify the summary options and click **Launch Instance**.
+7. **Verification:** Go to the EC2 Instances page and ensure the instance transitions to **Running** and passes both **2/2 status checks**.
+8. **Resource Teardown:** Select the instance → Instance State → Click **Terminate Instance** to delete the VM.
 
-> **Key Lesson:** Launching resources on AWS takes only a few clicks, but they incur ongoing charges. Terminating the EC2 instance immediately after testing is vital to prevent credit drain. Always check that the associated EBS volume is also deleted.
-
----
-
-### Task 2: Prompting in Amazon Bedrock Playground (+$20 Credit)
-
-**Objective:** Explore generative AI capabilities using foundational language models on AWS.
-
-**Service Overview:** **Amazon Bedrock** is a fully managed service that offers access to high-performing foundation models from leading AI companies (such as Anthropic, Meta, Cohere) via a single API, without managing server infrastructure.
-
-**Steps Executed:**
-1. Open the **Amazon Bedrock Console** → choose the task **Use a foundation model in Amazon Bedrock**.
-2. Request model access for **Claude 3 Haiku** (a fast, cost-efficient model for general text tasks).
-3. If an access authorization error occurs, submit a brief justification under **Model access** to request permission.
-4. Once access is active, navigate to the **Text Playground** and select **Claude 3 Haiku**.
-5. Input a prompt (e.g., "Summarize the benefits of cloud computing in three bullet points") and click **Run**.
-6. Review the output, adjust parameters like Temperature (to control creativity), and click **Finish** to complete the task.
-
-> **Key Lesson:** Access to advanced AI models is governed by AWS's Responsible AI policies. Submitting a clear, professional use case description accelerates the allowlisting process.
+> **Key Takeaway:** Launching computing power on AWS is fast and simple. However, to prevent unintended charges, always terminate the instance immediately after your test, and confirm that the associated EBS storage volume is deleted as well.
 
 ---
 
-### Task 3: Configure Cost Alerting in AWS Budgets (+$20 Credit)
+### Task 2: Testing Generative AI Prompts on Amazon Bedrock Playground (Earned $20 Credit)
 
-**Objective:** Set up proactive alerts to monitor credit usage and prevent billing surprises.
+**Goal:** Interact with foundational LLMs on the AWS cloud environment.
 
-**Service Overview:** **AWS Budgets** tracks resource spending and sends alerts via email or SNS when costs approach or exceed defined thresholds.
+**Service Overview:** **Amazon Bedrock** provides a single API to access high-performing foundation models from top AI developers (such as Anthropic, Meta, and Cohere) without needing to configure underlying servers.
 
-**Steps Executed:**
-1. Access the **AWS Billing Console** → select **Budgets** → start the task **Set up a cost budget using AWS Budgets**.
-2. Click **Start activity** to launch the creation wizard.
-3. Configure budget settings:
+**Steps Performed:**
+1. Navigate to the **Amazon Bedrock Console** → choose the task **Use a foundation model in Amazon Bedrock**.
+2. Request model access for **Claude 3 Haiku** (a fast, highly cost-efficient LLM).
+3. If access is restricted, fill out the prompt requesting access with a brief use-case explanation.
+4. Once access is granted, open the **Text Playground** and select **Claude 3 Haiku**.
+5. Input a test prompt (e.g., "Summarize the top three benefits of cloud computing") and click **Run**.
+6. Observe the model's output, experiment with configurations like Temperature (creativity level), and click **Finish** to complete.
+
+> **Key Takeaway:** Using AI models on AWS requires complying with security policies. Providing a clear description of your intended use-case will speed up the model approval process.
+
+---
+
+### Task 3: Cost Management with AWS Budgets (Earned $20 Credit)
+
+**Goal:** Build automated cost-alert thresholds to monitor spending.
+
+**Service Overview:** **AWS Budgets** monitors your cloud spending and sends emails or SMS notifications when your actual or forecasted usage exceeds a specific budget limit.
+
+**Steps Performed:**
+1. Go to the **AWS Billing Console** → select **Budgets** → start the **Set up a cost budget using AWS Budgets** activity.
+2. Select **Start activity** to run the budget creation wizard.
+3. Input the budget details:
    - Budget Type: Cost Budget.
    - Period: Monthly.
-   - Budgeted Amount: $20.00.
-4. Define alert thresholds:
-   - Set an alert when actual costs reach **80% ($16.00)** of the budget.
-   - Enter a personal email address to receive notifications.
-5. Review configurations and click **Create budget**.
+   - Budget Limit: $20.00.
+4. Set up the alerts:
+   - Configure a notification when actual spending reaches **80% ($16.00)** of the budget.
+   - Add your email address to receive the alerts.
+5. Review the details and select **Create budget** to enable it.
 
-> **Key Lesson:** Setting up a budget is the first line of defense in any cloud project. Proactive notifications ensure that runaway resources are identified before they consume all available credits.
+> **Key Takeaway:** Setting up a cost budget is the primary safety measure for any AWS account. It helps you catch active resources before they use up all your promotional credits.
 
 ---
 
-### Task 4: Deploy a Serverless Web Application with AWS Lambda (+$20 Credit)
+### Task 4: Deploying a Serverless Function with AWS Lambda (Earned $20 Credit)
 
-**Objective:** Run backend code using a serverless architecture.
+**Goal:** Deploy and run a web backend using a serverless model.
 
-**Service Overview:** **AWS Lambda** executes code in response to events (like HTTP requests) and automatically manages the underlying compute resource scaling. Charges are based solely on execution time, meaning zero costs when inactive.
+**Service Overview:** **AWS Lambda** runs code in response to specific triggers (like HTTP requests) and manages the infrastructure automatically. You only pay for the exact execution time, and it scales to zero when idle.
 
-**Steps Executed:**
-1. Navigate to the **AWS Lambda Console** → select the task **Create a web app using AWS Lambda**.
-2. Click **Start activity** → select **Use a blueprint** → search for the template **Getting started with Lambda HTTP**.
-3. Configure the function:
+**Steps Performed:**
+1. Navigate to the **AWS Lambda Console** → select **Create a web app using AWS Lambda**.
+2. Click **Start activity** → select **Use a blueprint** → find the **Getting started with Lambda HTTP** template.
+3. Configure the serverless function:
    - Function name: `fca-http-lambda-app`
-   - Select the acknowledgment box for creating an IAM role with basic permissions.
-4. Click **Create function** and wait for deployment.
-5. **Testing Step:** Copy the generated **Function URL** from the dashboard, paste it into a browser tab, and verify that it returns a successful JSON greeting.
-6. **Teardown:** Delete the function to clean up the workspace.
+   - Check the box to allow AWS to create a new execution IAM Role with basic permissions.
+4. Click **Create function** and wait for the deployment process to finish.
+5. **Testing:** Copy the **Function URL**, paste it into a new browser tab, and verify that the function returns a JSON welcome message.
+6. **Cleanup:** Delete the Lambda function to clean up the environment.
 
-> **Key Lesson:** Serverless computing eliminates the overhead of server patching and scaling. It scales down to zero, ensuring that a deployed function that receives no traffic costs nothing.
-
----
-
-### Task 5: Launch a Managed Relational Database using RDS (+$20 Credit)
-
-**Objective:** Deploy a secure, managed relational database cluster.
-
-**Service Overview:** **Amazon RDS (Relational Database Service)** automates complex database administration tasks, including database provisioning, patching, backups, and scaling.
-
-**Steps Executed:**
-1. Open the **Amazon RDS Console** → choose the task **Create an Amazon RDS Database**.
-2. Select **Easy create** to use optimized defaults.
-3. Configuration parameters:
-   - Database Engine: **Aurora (PostgreSQL Compatible)**.
-   - DB Instance Class: Select the smallest available instance type.
-4. Click **Create database** and monitor the database status until it shifts to **Available**.
-5. **Teardown Step (Order Matters):**
-   - Attempting to delete the cluster directly will fail due to dependency constraints.
-   - First, select and delete the DB instance (`database-1-instance-1`), choosing to skip the final snapshot.
-   - Second, select and delete the parent DB cluster (`database-1`).
-
-> **Key Lesson:** Managed database clusters have strict dependency chains. You must always remove the reader and writer instances before the cluster metadata can be deleted.
+> **Key Takeaway:** Serverless computing eliminates server management tasks like OS patching. The application incurs zero charges when there is no incoming traffic.
 
 ---
 
-### Week 1 Summary & Key Takeaways
+### Task 5: Launching a Managed Relational Database via Amazon RDS (Earned $20 Credit)
 
-- **Credits Secured:** Successfully claimed $100 in startup credits and earned an additional $100 by completing the 5 guided tasks (Total: **$200**).
-- **Service Familiarity:** Gained hands-on experience deploying instances (EC2), configuring AI prompts (Bedrock), monitoring budgets (AWS Budgets), executing serverless functions (Lambda), and managing databases (RDS).
-- **Cost Discipline:** Developed a strong habit of terminating resources immediately after deployment. A single database instance or VM left active can deplete credits rapidly.
-- **Guided Exploration:** Using the AWS Console's guided tasks is a low-risk, structured method for testing new cloud services.
+**Goal:** Deploy and terminate a secure, managed database instance on AWS.
+
+**Service Overview:** **Amazon RDS (Relational Database Service)** automates admin work like backups, software patching, and high-availability setups.
+
+**Steps Performed:**
+1. Open the **Amazon RDS Console** → choose the activity **Create an Amazon RDS Database**.
+2. Use the **Easy create** option to apply optimized defaults.
+3. Configure the database options:
+   - Database Engine: Select **Aurora (PostgreSQL Compatible)**.
+   - Instance Class: Choose the smallest available hardware tier.
+4. Click **Create database** and wait for the status to change to **Available**.
+5. **Cleanup Steps (Follow strict order):**
+   - You cannot delete the database cluster while there are active instances inside.
+   - First, select the database instance (`database-1-instance-1`) and delete it (uncheck the final snapshot option to speed up the process).
+   - Once the instance is deleted, select and delete the parent DB cluster (`database-1`).
+
+> **Key Takeaway:** Cloud database clusters have strict dependency relations. Always remove individual instances first before attempting to delete the parent cluster.
 
 ---
 
-*Source: [First Cloud Journey - AWS Study Group](https://cloudjourney.awsstudygroup.com/)*
+### Week 1 Summary & Key Lessons
+
+- **Credits Claimed:** Obtained $100 starting credits and another $100 for finishing the 5 console tasks (Total: **$200**).
+- **Core Skills:** Gained hands-on experience with foundational computing (EC2), AI prompting (Bedrock), cost guardrails (Budgets), serverless (Lambda), and relational databases (RDS).
+- **Cost Awareness:** Built a habit of deleting resources immediately after testing. Forgetting to delete a database instance or virtual machine can exhaust your credits quickly.
+- **Hands-on Learning:** Using the console's built-in guided activities is a safe, structured way to learn new cloud services.
+
+---
+
+*Reference: [First Cloud Journey - AWS Study Group](https://cloudjourney.awsstudygroup.com/)*

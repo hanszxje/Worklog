@@ -12,6 +12,6 @@ The program spans approximately **3 months** (April 20 – July 15, 2026), cover
 
 ---
 
-**Day 1**: [Account Setup, AWS Credits & 5 Hands-On Tasks (EC2, Bedrock, Budgets, Lambda, RDS)](1.1-Day1/)
+**Week 1**: [Account Creation, Securing Credits, and Guided Hands-On Labs](1.1-Week1/)
 
-**Day 2**: [Multi-Layer Cost Monitoring, Advanced Analytics & Foundational AWS Theory](1.2-Day2/)
+**Week 2**: [Advanced Cost Control, Automated Alerting Systems, and Core Infrastructure Principles](1.2-Week2/)

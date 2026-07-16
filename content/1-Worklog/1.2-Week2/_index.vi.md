@@ -6,170 +6,170 @@ chapter: false
 pre: " <b> 1.2. </b> "
 ---
 
-# Nhật Ký Làm Việc: Giám Sát Chi Phí Nâng Cao, Thiết Lập Cảnh Báo Đa Lớp và Lý Thuyết Hạ Tầng Cơ Bản
+# Nhật Ký Làm Việc: Quản Lý Chi Phí Chuyên Sâu, Thiết Lập Hệ Thống Cảnh Báo Tự Động và Kiến Thức Hạ Tầng Nền Tảng
 
-> **Tuần 2 - Thứ Hai, ngày 08/06/2026:** Hoàn thành xây dựng hệ thống cảnh báo chi phí đa tầng, thiết lập quy trình xử lý khẩn cấp và nghiên cứu sâu các lý thuyết kiến trúc đám mây và an toàn thông tin trên AWS.
+> **Tuần 2 - Thứ Hai, ngày 08/06/2026:** Hoàn thành thiết lập cơ chế giám sát chi phí đa lớp, xây dựng quy trình dọn dẹp khẩn cấp khi phát sinh sự cố tài chính, đồng thời tìm hiểu sâu lý thuyết về hạ tầng toàn cầu và bảo mật đám mây trên AWS.
 
 ---
 
 ### Mục tiêu học tập trong tuần
 
-- Triển khai **Hệ thống giám sát chi phí đa lớp** nhằm chủ động ngăn ngừa phát sinh chi phí.
-- Kích hoạt dịch vụ **Cost Anomaly Detection** kết hợp quy định gắn thẻ tag tài nguyên đồng bộ.
-- Xây dựng tài liệu hướng dẫn **Quy trình xử lý chi phí khẩn cấp** bằng các lệnh tra cứu AWS CLI.
-- Nghiên cứu lý thuyết hạ tầng cốt lõi của AWS: Mô hình trách nhiệm chung, Hạ tầng toàn cầu, IAM, các loại hình dịch vụ lưu trữ và điện toán.
+- Triển khai **Hệ thống cảnh báo chi phí nhiều lớp** để bảo vệ tài khoản một cách tối đa.
+- Kích hoạt tính năng **Cost Anomaly Detection** cùng với việc chuẩn hóa quy định gắn tag tài nguyên.
+- Lập tài liệu **Cẩm nang xử lý chi tiêu khẩn cấp** thông qua các câu lệnh AWS CLI để tìm và tắt tài nguyên rác.
+- Nghiên cứu các chủ đề lý thuyết nền tảng của AWS: Mô hình trách nhiệm chung, IAM, các mô hình dịch vụ lưu trữ, tính toán và hạ tầng vật lý toàn cầu.
 
 ---
 
-### Hệ Thống Giám Sát Chi Phí & Hàng Rào Cảnh Báo
+### Thiết Lập Hệ Thống Cảnh Báo & Giám Sát Chi Phí
 
-#### 1. Thiết lập 3 mức ngân sách với AWS Budgets
+#### 1. Cấu hình 3 bộ quy tắc ngân sách qua AWS Budgets
 
-Để kiểm soát chặt chẽ lượng credit sử dụng, tôi đã thiết lập 3 ngân sách khác nhau trên bảng quản trị chi phí:
+Để theo dõi sát sao lượng tín dụng tiêu dùng và ngăn ngừa rủi ro vượt hạn mức, tôi đã cài đặt 3 bộ quy tắc ngân sách riêng biệt:
 
-| Tên ngân sách cảnh báo | Ngưỡng giới hạn | Điều kiện kích hoạt cảnh báo |
+| Tên bộ cảnh báo ngân sách | Hạn mức cấu hình | Điều kiện gửi email thông báo |
 |---|---|---|
-| **Monthly Cap Budget** | $40.00 / tháng | Cảnh báo khi chi phí thực tế đạt **80% ($32.00)** |
-| **Warning Budget** | $20.00 / tháng | Cảnh báo khi chi phí thực tế đạt **50% ($10.00)** |
-| **Daily Safeguard Budget** | $5.00 / ngày | Cảnh báo khi chi phí thực tế đạt **100% ($5.00)** |
+| **Monthly Cap Budget** | $40.00 / tháng | Thông báo khi mức dùng thực tế chạm **80% ($32.00)** |
+| **Warning Budget** | $20.00 / tháng | Thông báo khi mức dùng thực tế chạm **50% ($10.00)** |
+| **Daily Safeguard Budget** | $5.00 / ngày | Thông báo khi mức dùng thực tế chạm **100% ($5.00)** |
 
-Ngân sách theo ngày đóng vai trò như một chốt chặn nhanh, giúp phát hiện sớm các tài nguyên cấu hình sai hoặc chạy ngầm trong vòng 24 giờ thay vì đợi cộng dồn đến cuối tháng.
+Bộ ngân sách hằng ngày là lớp bảo vệ tức thời, giúp sớm nhận diện các tài nguyên bị cấu hình sai hoặc quên tắt chỉ trong vòng 24h, không để chi phí tích lũy âm thầm đến cuối tháng.
 
-#### 2. Cảnh báo chi phí leo thang qua CloudWatch Billing Alarms
+#### 2. Cảnh báo vượt chi tiêu với CloudWatch Billing Alarms
 
-Tôi đã thiết lập các Billing Alarm trong CloudWatch sử dụng Amazon SNS để gửi thông báo khẩn cấp theo các mức độ nghiêm trọng:
+Tôi sử dụng dịch vụ Amazon SNS để phân phối các cảnh báo chi phí (Billing Alarms) từ CloudWatch đến các kênh thông tin tương ứng theo cấp độ nghiêm trọng:
 
-| Ngưỡng chi phí | Kênh nhận thông báo | Hành động vận hành |
+| Ngưỡng ngân sách | Kênh tiếp nhận cảnh báo | Hành động xử lý đề xuất |
 |---|---|---|
-| **$15.00** | Email cá nhân | Cảnh báo thông thường; kiểm tra danh sách dịch vụ đang chạy. |
-| **$35.00** | Email + SMS điện thoại | Ưu tiên cao; kiểm tra chi tiết trạng thái hoạt động của tài nguyên. |
-| **$60.00** | Email + SMS + Webhook Discord | Cảnh báo khẩn cấp; bắt đầu quy trình tắt tài nguyên khẩn cấp. |
+| **$15.00** | Email cá nhân | Mức độ Thấp; rà soát lại danh sách dịch vụ đang vận hành. |
+| **$35.00** | Email + SMS điện thoại | Mức độ Trung bình; kiểm tra kỹ xem có tài nguyên nào chạy sai quy trình. |
+| **$60.00** | Email + SMS + Webhook Discord | Mức độ Khẩn cấp; kích hoạt ngay quy trình tắt và dọn dẹp tài nguyên. |
 
-#### 3. Tự động phát hiện bất thường bằng AWS Cost Anomaly Detection (Tính năng bổ sung mới)
+#### 3. Phát hiện chi tiêu bất thường với AWS Cost Anomaly Detection
 
-Kích hoạt dịch vụ **AWS Cost Anomaly Detection** sử dụng thuật toán máy học (Machine Learning) để giám sát và phát hiện các chi tiêu bất thường dựa trên lịch sử sử dụng trước đó:
-- Loại giám sát: Theo dõi toàn bộ các dịch vụ AWS.
-- Ngưỡng kích hoạt: Chi phí bất thường vượt quá $5.00 trong ngày.
-- Vai trò: Gửi thông báo ngay lập tức khi phát hiện biến động chi phí đột biến mà không cần đợi chạm ngưỡng ngân sách tĩnh.
+Kích hoạt công cụ **AWS Cost Anomaly Detection** tích hợp trí tuệ nhân tạo (Machine Learning) để phân tích hành vi chi tiêu và gửi cảnh báo khi phát hiện các biến động chi phí bất thường:
+- Đối tượng theo dõi: Tất cả các dịch vụ đang chạy trên tài khoản AWS.
+- Ngưỡng kích hoạt cảnh báo: Biến động chi phí vượt quá $5.00 trong một ngày.
+- Ưu điểm: Gửi email cảnh báo tức thời ngay khi phát hiện chi tiêu tăng vọt một cách bất thường, không phụ thuộc vào các mốc ngân sách tĩnh đã thiết lập.
 
 ---
 
-### Phân Tích Chi Phí Nâng Cao & Gắn Thẻ Tài Nguyên
+### Quản Lý Thẻ Tag Tài Nguyên & Bảng Giám Sát Chi Phí
 
-#### Chính sách gắn thẻ tag tài nguyên (Resource Tagging)
+#### Chính sách phân bổ thẻ tag (Resource Tagging)
 
-Để thuận tiện cho việc lập báo cáo và phân bổ ngân sách trong AWS Cost Explorer, mọi tài nguyên khởi tạo đều bắt buộc phải gắn các thẻ tag phân loại rõ ràng:
+Nhằm mục đích dễ dàng phân loại chi phí trong AWS Cost Explorer, tất cả các tài nguyên khởi tạo đều bắt buộc tuân thủ quy tắc gắn tag như sau:
 
-| Thẻ khóa (Tag Key) | Giá trị ví dụ | Ý nghĩa và mục đích |
+| Khóa thẻ (Tag Key) | Ví dụ giá trị (Value) | Vai trò phân loại |
 |---|---|---|
-| `Project` | `cloud-training` | Phân loại chi phí theo từng dự án cụ thể. |
-| `Environment` | `dev` / `testing` | Phân biệt tài nguyên phòng Lab thử nghiệm và môi trường kiểm thử. |
-| `Author` | `intern-dev` | Xác định kỹ sư chịu trách nhiệm khởi tạo và quản lý tài nguyên. |
+| `Project` | `cloud-training` | Chỉ định tài nguyên thuộc dự án huấn luyện nào. |
+| `Environment` | `dev` / `testing` | Phân biệt môi trường phát triển thử nghiệm với môi trường test. |
+| `Author` | `intern-dev` | Xác định người chịu trách nhiệm quản lý tài nguyên. |
 
-#### Bảng điều khiển CloudWatch giám sát tập trung
+#### Bảng điều khiển CloudWatch Dashboard tập trung
 
-- Thiết lập một **Bảng điều khiển giám sát (Dashboard)** trong CloudWatch hiển thị đồng thời biểu đồ CPU của EC2 và dự báo chi phí ước tính trong tháng.
-- Theo dõi các số liệu cấp ứng dụng để phòng ngừa trường hợp vòng lặp vô hạn trong code thử nghiệm gây tốn tài nguyên.
+- Thiết lập một bảng điều khiển **CloudWatch Dashboard** trực quan hiển thị đồng thời các biểu đồ theo dõi hiệu năng CPU của EC2 và dự báo tổng chi tiêu ước tính của tháng.
+- Theo dõi các chỉ số vận hành để phát hiện sớm các lỗi lặp vô hạn trong các đoạn mã chạy thử, tránh lãng phí tài nguyên đám mây.
 
 ---
 
-### Quy Trình Xử Lý Chi Phí Khẩn Cấp & Dọn Dẹp Tài Nguyên
+### Quy Trình Dọn Dẹp Khẩn Cấp & Cẩm Nang CLI
 
-#### 1. Các lệnh tra cứu khẩn cấp qua AWS CLI
+#### 1. Các lệnh quét tài nguyên nhanh qua AWS CLI
 
-Khi nhận được cảnh báo chi phí bất thường, thực hiện ngay các lệnh CLI sau trên Terminal để quét và phát hiện các dịch vụ đang chạy gây tốn phí:
+Khi hệ thống gửi cảnh báo chi tiêu vượt ngưỡng, sử dụng ngay các dòng lệnh sau trên giao diện terminal để xác định nhanh những dịch vụ đang tiêu hao nhiều chi phí:
 
 ```bash
-# 1. Liệt kê các máy chủ ảo EC2 đang chạy trong khu vực (Region) hiện tại
+# 1. Liệt kê các instance EC2 đang ở trạng thái Running ở vùng hiện tại
 aws ec2 describe-instances --filters "Name=instance-state-name,Values=running" \
   --query 'Reservations[].Instances[].{ID:InstanceId,Type:InstanceType,Zone:Placement.AvailabilityZone}' \
   --output table
 
-# 2. Liệt kê toàn bộ các cơ sở dữ liệu RDS đang hoạt động
+# 2. Hiển thị danh sách toàn bộ các DB instance RDS đang hoạt động
 aws rds describe-db-instances \
   --query 'DBInstances[].{DBIdentifier:DBInstanceIdentifier,Engine:Engine,Status:DBInstanceStatus}' \
   --output table
 
-# 3. Tìm các ổ cứng EBS đang rảnh rỗi (vẫn bị tính phí ngay cả khi máy chủ đã tắt)
+# 3. Tìm kiếm các ổ cứng EBS đang rảnh rỗi (vẫn phát sinh phí lưu trữ dù máy chủ ảo đã tắt)
 aws ec2 describe-volumes --filters "Name=status,Values=available" \
   --query 'Volumes[].{VolumeID:VolumeId,Size:Size,Zone:AvailabilityZone}' \
   --output table
 
-# 4. Tìm các địa chỉ IP tĩnh (Elastic IP) không gắn với máy chủ nào (bị tính phí treo máy)
+# 4. Truy vấn các IP tĩnh (Elastic IP) chưa được liên kết với máy ảo nào (gây tốn phí duy trì)
 aws ec2 describe-addresses \
   --query 'Addresses[?AssociationId==null].{IP:PublicIp,AllocationId:AllocationId}' \
   --output table
 ```
 
-#### 2. Quy trình xử lý khẩn cấp từng bước
-1. Đăng nhập ngay vào AWS Console bằng tài khoản quản trị.
-2. Dừng (Stop) hoặc xóa hoàn toàn (Terminate) các máy chủ ảo `EC2` và xóa các cụm dữ liệu `RDS` không sử dụng.
-3. Tiến hành xóa các ổ cứng `EBS` đang ở trạng thái `available` và giải phóng (Release) các địa chỉ `Elastic IP` đang rỗi.
-4. Tắt các cấu hình thử nghiệm mô hình AI trên Bedrock và dọn dẹp các đường dẫn hàm Lambda cũ.
+#### 2. Kịch bản xử lý sự cố chi phí khẩn cấp
+1. Tiến hành đăng nhập nhanh vào AWS Console.
+2. Tắt (Stop) hoặc xóa vĩnh viễn (Terminate) các máy chủ `EC2` dư thừa và hủy bỏ các DB instance hoặc cluster `RDS` không cần thiết.
+3. Tiến hành xóa bỏ các ổ cứng `EBS` đang trống (trạng thái `available`) và thu hồi (Release) các địa chỉ `Elastic IP` đang rảnh rỗi.
+4. Ngắt kết nối với các mô hình thử nghiệm AI trên Bedrock và thu hồi các URL chức năng Lambda không còn sử dụng.
 
 ---
 
-### Lý Thuyết Kiến Trúc Đám Mây Nền Tảng
+### Lý Thuyết Nền Tảng Về Điện Toán Đám Mây
 
-#### Mô hình dịch vụ điện toán đám mây
-- **Elasticity (Tính co giãn):** Khả năng tự động tăng hoặc giảm tài nguyên tùy theo lưu lượng truy cập thực tế.
-- **Dịch chuyển chi phí:** Chuyển đổi từ chi phí đầu tư hạ tầng ban đầu (CapEx) sang chi phí vận hành trả theo mức sử dụng (OpEx).
-- **Hạ tầng toàn cầu:** Khả năng triển khai ứng dụng đến các vùng địa lý khác nhau trên thế giới một cách nhanh chóng.
+#### Các đặc trưng dịch vụ và mô hình đám mây
+- **Elasticity (Tính co giãn):** Khả năng nâng cấp hoặc hạ cấp tài nguyên máy chủ tự động để thích ứng với lượng truy cập thay đổi.
+- **Tối ưu tài chính:** Chuyển đổi mô hình đầu tư thiết bị phần cứng ban đầu (CapEx) sang mô hình chi trả chi phí vận hành thực tế theo nhu cầu sử dụng (OpEx).
+- **Phạm vi toàn cầu:** Khả năng triển khai ứng dụng tới nhiều khu vực trên thế giới với độ trễ tối thiểu.
 
-| Mô hình dịch vụ | Ví dụ trên AWS | Phần người dùng tự quản lý |
+| Mô hình điện toán đám mây | Ví dụ cụ thể trên AWS | Trách nhiệm của khách hàng |
 |---|---|---|
-| **IaaS (Hạ tầng như một dịch vụ)** | Amazon EC2, VPC | Hệ điều hành, thư viện chạy code, mã nguồn ứng dụng và cấu hình mạng. |
-| **PaaS (Nền tảng như một dịch vụ)** | AWS Elastic Beanstalk, RDS | Mã nguồn ứng dụng và cấu trúc bảng dữ liệu. |
-| **SaaS (Phần mềm như một dịch vụ)** | Amazon WorkMail, Chime | Không cần quản lý hạ tầng; sử dụng phần mềm trực tiếp qua trình duyệt/ứng dụng. |
+| **IaaS (Hạ tầng như một dịch vụ)** | Amazon EC2, VPC | Quản trị hệ điều hành, cấu hình mạng, thiết lập runtime cài đặt phần mềm và viết code. |
+| **PaaS (Nền tảng như một dịch vụ)** | AWS Elastic Beanstalk, RDS | Chỉ cần quản lý mã nguồn ứng dụng và thiết kế cấu trúc dữ liệu. |
+| **SaaS (Phần mềm như một dịch vụ)** | Amazon WorkMail, Chime | Sử dụng dịch vụ trực tiếp thông qua trình duyệt hoặc client; không cần quản lý kỹ thuật. |
 
-#### Hạ tầng toàn cầu của AWS
-- **Regions (Vùng địa lý):** Các khu vực địa lý độc lập chứa nhiều trung tâm dữ liệu. Dữ liệu sẽ lưu trữ cố định tại Region đã chọn trừ khi được người dùng cấu hình sao chép đi nơi khác.
-- **Availability Zones (AZs):** Các trung tâm dữ liệu vật lý riêng biệt trong một Region, kết nối bằng mạng cáp quang tốc độ cao. Triển khai tài nguyên trên nhiều AZ giúp hệ thống có **Độ sẵn sàng cao (High Availability)**.
-- **Edge Locations (Điểm phân phối):** Điểm đặt máy chủ bộ nhớ đệm thuộc mạng lưới CDN CloudFront của AWS, giúp truyền tải nội dung tĩnh đến người dùng ở vị trí gần nhất với độ trễ thấp nhất.
+#### Hệ thống hạ tầng toàn cầu của AWS
+- **Regions (Vùng địa lý):** Các khu vực địa lý tách biệt chứa nhiều trung tâm dữ liệu. Dữ liệu sẽ nằm cố định tại Region được chọn trừ khi được cấu hình sao chép thủ công.
+- **Availability Zones (AZs):** Các nhóm trung tâm dữ liệu độc lập về nguồn điện và hạ tầng mạng trong cùng một Region, kết nối thông qua mạng cáp quang siêu tốc. Việc chạy đa ứng dụng trên nhiều AZ giúp đạt tính **Sẵn sàng cao (High Availability)**.
+- **Edge Locations (Điểm biên):** Trạm đặt máy chủ cache thuộc mạng lưới CDN (Amazon CloudFront) hỗ trợ phân phối dữ liệu tĩnh đến người dùng ở gần nhất, giúp giảm đáng kể thời gian tải trang.
 
 ---
 
-### Bảo Mật Hệ Thống & Quản Lý Danh Tính (IAM)
+### Cơ Chế Bảo Mật & Quản Trị Hệ Thống (IAM)
 
 - **Mô hình trách nhiệm chung (Shared Responsibility Model):**
-  - **Trách nhiệm của AWS (OF the cloud):** Bảo mật hạ tầng vật lý của trung tâm dữ liệu, thiết bị mạng, phần cứng máy chủ và lớp ảo hóa.
-  - **Trách nhiệm của khách hàng (IN the cloud):** Bảo mật hệ điều hành, cấu hình tường lửa (Security Group), phân quyền truy cập người dùng và mã hóa dữ liệu.
-- **Nguyên tắc quản trị IAM:**
-  - **Bảo vệ tài khoản Root:** Kích hoạt xác thực 2 lớp (MFA) và hạn chế sử dụng tài khoản Root cho công việc hàng ngày.
-  - **Nguyên tắc quyền tối thiểu (Least Privilege):** Chỉ cấp đúng và đủ những quyền hạn cần thiết để thực hiện công việc.
-  - **Quản lý theo Nhóm (Groups):** Gán quyền thông qua IAM Group thay vì phân quyền riêng lẻ cho từng người dùng.
-  - **Cấu hình bằng JSON:** Sử dụng cấu trúc tài liệu JSON để mô tả chi tiết các hành động (Actions), tài nguyên (Resources) và điều kiện (Conditions) được phép truy cập.
+  - **Trách nhiệm của AWS (Bảo mật của đám mây - OF the cloud):** Đảm bảo an toàn cho cơ sở hạ tầng vật lý của các Datacenter, máy chủ vật lý, phần mềm ảo hóa và hạ tầng mạng toàn cầu.
+  - **Trách nhiệm của khách hàng (Bảo mật trong đám mây - IN the cloud):** Quản trị hệ điều hành, cấu hình các port kết nối (Security Group), phân quyền tài khoản người dùng và thực hiện mã hóa dữ liệu.
+- **Các nguyên tắc cốt lõi trong AWS IAM:**
+  - **Bảo vệ tài khoản gốc (Root Account):** Bắt buộc bật xác thực đa nhân tố (MFA) và hạn chế tối đa việc sử dụng tài khoản Root cho các hoạt động hằng ngày.
+  - **Nguyên lý phân quyền tối thiểu (Least Privilege):** Chỉ cấp phát đúng những quyền hạn cần thiết vừa đủ để hoàn thành tác vụ.
+  - **Quản lý theo Nhóm (Groups):** Gán quyền hạn thông qua các Group thay vì gán trực tiếp cho từng cá nhân để quản trị hiệu quả hơn.
+  - **Sử dụng chính sách định dạng JSON:** Thiết lập chi tiết các hành động được phép hoặc bị cấm thông qua cấu trúc file JSON gồm Actions, Resources và Conditions.
 
 ---
 
-### Tổng Quan Các Dịch Vụ Lưu Trữ & Cơ Sở Dữ Liệu
+### Tổng Quan Dịch Vụ Lưu Trữ & Cơ Sở Dữ Liệu
 
 - **Amazon S3 (Simple Storage Service):**
-  - Dịch vụ lưu trữ đối tượng với độ bền vững dữ liệu đạt **99.999999999% (11 số 9)**.
-  - Hỗ trợ phân lớp lưu trữ (S3 Standard, Standard-IA, Glacier) để tối ưu hóa chi phí dựa trên tần suất truy xuất tệp tin.
-- **Amazon RDS:** Cơ sở dữ liệu quan hệ được quản lý tự động, hỗ trợ sao lưu dự phòng định kỳ, vá lỗi bảo mật phần mềm và đồng bộ bản sao.
-- **AWS Lambda:** Dịch vụ serverless thực thi code theo sự kiện, tự động mở rộng tài nguyên và không yêu cầu quản lý máy chủ.
+  - Hệ thống lưu trữ đối tượng bền vững với cam kết độ an toàn dữ liệu lên tới **99.999999999% (11 số 9)**.
+  - Cho phép tự động chuyển đổi các lớp lưu trữ (S3 Standard, Standard-IA, Glacier) để giảm chi phí dựa trên tần suất truy cập dữ liệu.
+- **Amazon RDS:** Cơ sở dữ liệu quan hệ được AWS quản trị hoàn toàn, tự động hóa các tác vụ sao lưu, vá lỗi phần mềm và duy trì tính ổn định.
+- **AWS Lambda:** Mô hình serverless thực thi mã nguồn khi có sự kiện kích hoạt, có khả năng tự động co giãn và tiết kiệm chi phí tối đa.
 
 ---
 
-### Nội Dung Học Tập Đã Hoàn Thành
+### Tiến Độ Học Tập Đã Hoàn Thành
 
-| Ngày học | Nội dung bài học tập trung | Dịch vụ AWS liên quan |
+| Thời gian học | Chủ đề học tập tập trung | Các dịch vụ AWS liên quan |
 |---|---|---|
-| **08/06/2026** | Hạ tầng và cấu hình máy chủ ảo | Amazon EC2, AMI, Instance Types |
-| **08/06/2026** | Phân quyền truy cập hệ thống | AWS IAM, Roles, Policies |
-| **08/06/2026** | Môi trường lập trình tích hợp | AWS Cloud9, Instance Profiles |
-| **08/06/2026** | Lưu trữ đối tượng và lưu trữ web tĩnh | Amazon S3, S3 Bucket Policies |
-| **08/06/2026** | Cơ sở dữ liệu và quy trình sao lưu | Amazon RDS, DB Engines |
+| **08/06/2026** | Hạ tầng máy chủ ảo và quản lý Instance | Amazon EC2, AMI, Instance Types |
+| **08/06/2026** | Quản lý danh tính và phân quyền truy cập | AWS IAM, Roles, Policies |
+| **08/06/2026** | Môi trường phát triển và lập trình đám mây | AWS Cloud9, Instance Profiles |
+| **08/06/2026** | Lưu trữ dữ liệu và cấu hình lưu trữ tĩnh | Amazon S3, S3 Bucket Policies |
+| **08/06/2026** | Thiết lập và quản lý hệ cơ sở dữ liệu | Amazon RDS, DB Engines |
 
 ---
 
-### Bài học rút ra từ Tuần 2
+### Đúc kết kinh nghiệm sau Tuần 2
 
-1. **Phòng thủ chi phí nhiều lớp:** Việc kết hợp ngân sách tĩnh (Budgets), cảnh báo chi phí (Alarms) và giám sát thông minh (Anomaly Detection) giúp bảo vệ tài khoản tối đa trước các rủi ro phát sinh hóa đơn lớn.
-2. **Kỷ luật tagging:** Gắn thẻ tag tài nguyên là điều kiện bắt buộc để quản lý tài chính đám mây hiệu quả.
-3. **Kỹ năng xử lý khẩn cấp:** Xây dựng sẵn kịch bản dọn dẹp và sử dụng các lệnh CLI để nhanh chóng quét các tài nguyên rác (như ổ cứng EBS chưa dùng hay IP tĩnh chưa gắn máy chủ) là kỹ năng vận hành thực tế cực kỳ quan trọng đối với kỹ sư đám mây.
+1. **Phòng vệ chi phí từ sớm:** Kết hợp hài hòa giữa việc cảnh báo tĩnh (Budgets), thông báo biến động CloudWatch Alarms và phát hiện tự động bằng AI (Cost Anomaly Detection) sẽ bảo vệ tối đa tài khoản khỏi các sự cố phát sinh hóa đơn lớn.
+2. **Kỷ luật gắn tag tài nguyên:** Việc gắn thẻ tag đầy đủ là bắt buộc để dễ dàng theo dõi và hạch toán chi phí sử dụng dịch vụ đám mây.
+3. **Phản xạ xử lý sự cố:** Xây dựng sẵn kịch bản và thuộc lòng các câu lệnh CLI truy tìm tài nguyên rác (như ổ cứng EBS chưa dùng hay địa chỉ Elastic IP đang rảnh rỗi) là kỹ năng thực hành quan trọng cho bất kỳ kỹ sư vận hành hệ thống đám mây nào.
 
 ---
 
-*Nguồn tài liệu chính: [First Cloud Journey - AWS Study Group](https://cloudjourney.awsstudygroup.com/)*
+*Tham khảo: [First Cloud Journey - AWS Study Group](https://cloudjourney.awsstudygroup.com/)*

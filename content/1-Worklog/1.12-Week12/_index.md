@@ -17,11 +17,11 @@ pre: " <b> 1.12. </b> "
 
 | Day | Task | Date |
 |---|---|---|
-| Monday | Programmed the ReactJS frontend dashboard, integrating Plotly.js charts displaying actual vs forecast sales. | Jul 12 |
-| Tuesday | Provisioned production Ubuntu EC2 instance. Cloned codebase, configured environment variables, and configured PM2 runtime. | Jul 12 |
-| Wednesday | Installed and configured Nginx reverse proxy server policies on the production Ubuntu instance. | Jul 12 |
-| Thursday | Configured domain settings, ran Certbot Let's Encrypt client utilities to generate secure SSL certificates. | Jul 12 |
-| Friday | Conducted End-to-End integration testing across multiple user roles (Associate, Store Manager, Admin). Finalized reports. | Jul 12 |
+| Monday | Programmed the ReactJS frontend dashboard, integrating Plotly.js charts displaying actual vs forecast sales. | Jul 13 |
+| Tuesday | Provisioned production Ubuntu EC2 instance. Cloned codebase, configured environment variables, and configured PM2 runtime. | Jul 14 |
+| Wednesday | Installed and configured Nginx reverse proxy server policies on the production Ubuntu instance. | Jul 15 |
+| Thursday | Configured domain settings, ran Certbot Let's Encrypt client utilities to generate secure SSL certificates. | Jul 16 |
+| Friday | Conducted End-to-End integration testing across multiple user roles (Associate, Store Manager, Admin). Finalized reports. | Jul 17 |
 
 **Weekly results achieved:**
 - **Monday:**

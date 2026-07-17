@@ -1,37 +1,29 @@
 ---
 title: "Nhật ký công việc"
-date: 2024-06-30
+date: 2024-06-08
 weight: 1
 chapter: false
 pre: " <b> 1. </b> "
 ---
 
-Trong suốt quá trình thực tập tại AWS Việt Nam dưới sự hướng dẫn của anh Nguyễn Gia Hưng, em đã ghi chép nhật ký công việc hàng tuần. Qua 12 tuần thực tập, em đã đi từ các bước làm quen hạ tầng cloud cơ bản đến thiết kế, lập trình và triển khai thực tế một pipeline dự báo học máy tự động cùng ứng dụng web bán lẻ hoàn chỉnh trên AWS.
+Đây là nhật ký công việc của mình trong suốt chương trình thực tập **First Cloud AI Journey (FCAJ)** - chương trình thực tập tập trung vào Cloud và AI trên nền tảng AWS. Mỗi nhật ký tuần ghi lại mục tiêu, các công việc triển khai từ Thứ Hai đến Thứ Bảy, và kết quả đạt được.
+
+Chương trình kéo dài **12 tuần**, bao gồm các nội dung từ cơ bản đến nâng cao về điện toán đám mây, data engineering, analytics, bảo mật và kiến trúc hệ thống trên AWS.
 
 ---
 
-**Tuần 1**: [Đăng ký thành công tài khoản AWS cá nhân và nhận $100 credit ban đầu từ chương trình](1.1-Week1/)
+| Tuần | Khoảng thời gian | Nội dung tập trung |
+|------|-----------------|-------------------|
+| [**Tuần 1**](1.1-Week1/) | 27/4 - 3/5 | Khởi đầu chương trình FCAJ, Nhận Credit & 5 Bài Lab Cơ bản |
+| [**Tuần 2**](1.2-Week2/) | 4/5 - 10/5 | AWS CLI, CloudShell, Cấu hình MFA & Quản trị IAM |
+| [**Tuần 3**](1.3-Week3/) | 11/5 - 17/5 | Hạ tầng mạng VPC, Route Table, NAT Gateway & Kết nối EICE SSH |
+| [**Tuần 4**](1.4-Week4/) | 18/5 - 24/5 | Đề xuất Ý tưởng Capstone Project & Thiết kế Luồng Dữ liệu Bán lẻ |
+| [**Tuần 5**](1.5-Week5/) | 25/5 - 31/5 | Cấu hình Hybrid DNS, Liên thông VPC Peering & AWS Transit Gateway |
+| [**Tuần 6**](1.6-Week6/) | 1/6 - 7/6 | Đánh giá EC2 Instance Types, EBS Storage & AWS Backup |
+| [**Tuần 7**](1.7-Week7/) | 8/6 - 14/6 | Tham dự AWS Community Day, Cấu hình S3 Website Hosting & CRR |
+| [**Tuần 8**](1.8-Week8/) | 15/6 - 21/6 | Chiến lược Disaster Recovery & Triển khai FSx for Windows Server |
+| [**Tuần 9**](1.9-Week9/) | 22/6 - 28/6 | AWS Security Hub, Phân quyền Lambda & Mã hóa AWS KMS |
+| [**Tuần 10**](1.10-Week10/) | 29/6 - 5/7 | Thiết kế Kiến trúc Hệ thống, Edge Security & Tính toán FinOps |
+| [**Tuần 11**](1.11-Week11/) | 6/7 - 12/7 | Triển khai RDS Database, AWS Glue Spark ETL & Huấn luyện XGBoost |
+| [**Tuần 12**](1.12-Week12/) | 13/7 - 19/7 | Hoàn thiện Web Portal Glassmorphism, Reverse Proxy Nginx, SSL & E2E Test |
 
-**Tuần 2**: [Khám phá giao diện AWS Management Console, tìm hiểu cách sử dụng và cấu hình AWS CLI cùng công cụ CloudShell](1.2-Week2/)
-
-**Tuần 3**: [Nghiên cứu lý thuyết mạng ảo VPC (Virtual Private Cloud), cơ chế định tuyến qua Route Table, phân biệt IGW, Public/Private Subnets](1.3-Week3/)
-
-**Tuần 4**: [Nghiên cứu, đề xuất ý tưởng đề tài nghiên cứu cá nhân phục vụ bài tập Capstone Project](1.4-Week4/)
-
-**Tuần 5**: [Nghiên cứu cơ chế phân giải Hybrid DNS, Route 53 Resolver Endpoints và Resolver Rules](1.5-Week5/)
-
-**Tuần 6**: [Tìm hiểu các nhóm Amazon EC2 Instance Types, so sánh chip Intel/AMD với chip Graviton](1.6-Week6/)
-
-**Tuần 7**: [Tham dự sự kiện công nghệ AWS First Cloud AI Journey Community Day](1.7-Week7/)
-
-**Tuần 8**: [Tìm hiểu chiến lược khắc phục sự cố Disaster Recovery dựa trên RTO và RPO](1.8-Week8/)
-
-**Tuần 9**: [Thực hành Lab 18 kích hoạt AWS Security Hub để quét lỗi bảo mật](1.9-Week9/)
-
-**Tuần 10**: [Thiết kế sơ đồ kiến trúc runtime tổng thể cho dự án Capstone Fashion Retail](1.10-Week10/)
-
-**Tuần 11**: [Khởi tạo hạ tầng mạng VPC và cơ sở dữ liệu RDS PostgreSQL (fashion-rds, training-db)](1.11-Week11/)
-
-**Tuần 12**: [Lập trình giao diện Web Portal tương tác bằng ReactJS và Nodejs](1.12-Week12/)
-
----

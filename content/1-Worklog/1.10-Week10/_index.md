@@ -16,11 +16,11 @@ pre: " <b> 1.10. </b> "
 
 | Day | Task | Date |
 |---|---|---|
-| Monday | Designed the overall system runtime architecture diagram, mapping client traffic to compute servers. | Jun 28 |
-| Tuesday | Designed the Edge Security layers, combining Amazon CloudFront CDN with AWS WAF firewall protections. | Jun 28 |
-| Wednesday | Designed the asynchronous ETL pipeline architecture, mapping Glue Jobs connecting RDS PostgreSQL to S3. | Jun 28 |
-| Thursday | Evaluated the system architecture designs against the 6 pillars of the AWS Well-Architected Framework. | Jun 28 |
-| Friday | Estimated monthly running costs of all planned resources using the AWS Pricing Calculator. | Jun 28 |
+| Monday | Designed the overall system runtime architecture diagram, mapping client traffic to compute servers. | Jun 29 |
+| Tuesday | Designed the Edge Security layers, combining Amazon CloudFront CDN with AWS WAF firewall protections. | Jun 30 |
+| Wednesday | Designed the asynchronous ETL pipeline architecture, mapping Glue Jobs connecting RDS PostgreSQL to S3. | Jul 01 |
+| Thursday | Evaluated the system architecture designs against the 6 pillars of the AWS Well-Architected Framework. | Jul 02 |
+| Friday | Estimated monthly running costs of all planned resources using the AWS Pricing Calculator. | Jul 03 |
 
 **Weekly results achieved:**
 - **Monday:**

@@ -16,11 +16,11 @@ pre: " <b> 1.3. </b> "
 
 | Thứ | Công việc | Ngày |
 |---|---|---|
-| Thứ Hai | Nghiên cứu lý thuyết mạng ảo VPC, cơ chế định tuyến qua Route Table và vai trò của cổng Internet Gateway. | 10/5 |
-| Thứ Ba | Tìm hiểu cơ chế NAT Gateway, so sánh giải pháp Public/Private NAT và thiết lập IP tĩnh Elastic IP đi kèm. | 10/5 |
-| Thứ Tư | Tìm hiểu giải pháp EC2 Instance Connect Endpoint (EICE). Khởi tạo endpoint kết nối trong Private Subnet. | 10/5 |
-| Thứ Năm | Cấu hình quy tắc Inbound/Outbound Rules cho Security Group nhằm cấp quyền kết nối thông qua EICE. | 10/5 |
-| Thứ Sáu | Thực hành Lab cấu hình NAT Gateway và EICE. Chạy thử nghiệm kiểm tra cập nhật hệ điều hành từ Private Subnet. | 10/5 |
+| Thứ Hai | Nghiên cứu lý thuyết mạng ảo VPC, cơ chế định tuyến qua Route Table và vai trò của cổng Internet Gateway. | 11/5 |
+| Thứ Ba | Tìm hiểu cơ chế NAT Gateway, so sánh giải pháp Public/Private NAT và thiết lập IP tĩnh Elastic IP đi kèm. | 12/5 |
+| Thứ Tư | Tìm hiểu giải pháp EC2 Instance Connect Endpoint (EICE). Khởi tạo endpoint kết nối trong Private Subnet. | 13/5 |
+| Thứ Năm | Cấu hình quy tắc Inbound/Outbound Rules cho Security Group nhằm cấp quyền kết nối thông qua EICE. | 14/5 |
+| Thứ Sáu | Thực hành Lab cấu hình NAT Gateway và EICE. Chạy thử nghiệm kiểm tra cập nhật hệ điều hành từ Private Subnet. | 15/5 |
 
 **Kết quả đạt được trong tuần là gì:**
 - **Thứ Hai:**

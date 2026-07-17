@@ -16,11 +16,11 @@ pre: " <b> 1.8. </b> "
 
 | Thứ | Công việc | Ngày |
 |---|---|---|
-| Thứ Hai | Nghiên cứu các khái niệm cơ bản về khắc phục sự cố sau thảm họa (DR), đặc biệt là chỉ số RTO và RPO. | 14/6 |
-| Thứ Ba | So sánh sơ đồ kiến trúc các giải pháp DR: Backup/Restore, Pilot Light, Warm Standby và Multi-Site. | 14/6 |
-| Thứ Tư | Thực hành Lab 25, cấu hình tạo ổ đĩa chia sẻ Amazon FSx for Windows File Server dạng Multi-AZ. | 14/6 |
-| Thứ Năm | Cấu hình AWS Directory Service, thiết lập domain Microsoft Active Directory để tích hợp xác thực với FSx. | 14/6 |
-| Thứ Sáu | Tìm hiểu tổng quan về dịch vụ bảo mật Amazon Cognito và mã hóa dữ liệu tĩnh thông qua AWS KMS. | 14/6 |
+| Thứ Hai | Nghiên cứu các khái niệm cơ bản về khắc phục sự cố sau thảm họa (DR), đặc biệt là chỉ số RTO và RPO. | 15/6 |
+| Thứ Ba | So sánh sơ đồ kiến trúc các giải pháp DR: Backup/Restore, Pilot Light, Warm Standby và Multi-Site. | 16/6 |
+| Thứ Tư | Thực hành Lab 25, cấu hình tạo ổ đĩa chia sẻ Amazon FSx for Windows File Server dạng Multi-AZ. | 17/6 |
+| Thứ Năm | Cấu hình AWS Directory Service, thiết lập domain Microsoft Active Directory để tích hợp xác thực với FSx. | 18/6 |
+| Thứ Sáu | Tìm hiểu tổng quan về dịch vụ bảo mật Amazon Cognito và mã hóa dữ liệu tĩnh thông qua AWS KMS. | 19/6 |
 
 **Kết quả đạt được trong tuần là gì:**
 - **Thứ Hai:**

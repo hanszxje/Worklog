@@ -1,37 +1,29 @@
 ---
-title: "Work Log"
-date: 2024-06-30
+title: "Worklog"
+date: 2024-06-08
 weight: 1
 chapter: false
 pre: " <b> 1. </b> "
 ---
 
-During my internship at AWS Vietnam under the guidance of Mr. Nguyen Gia Hung, I kept a weekly log of my activities, tasks, and learnings. Over the course of 12 weeks, I progressed from initial cloud onboarding and network setup to designing and deploying a complete production-ready machine learning forecasting pipeline and retail web application.
+This is my worklog throughout the **First Cloud AI Journey (FCAJ)** internship program - an internship focused on Cloud and AI on the AWS platform. Each weekly entry documents learning objectives, services explored, hands-on tasks completed, and key takeaways.
+
+The program spans **12 weeks**, covering topics from foundational to advanced levels in cloud computing, data engineering, analytics, security, and system architecture on AWS.
 
 ---
 
-**Week 1**: [Register and configure a new AWS account, obtaining $100 in initial credits from the program](1.1-Week1/)
+| Week | Period | Focus Area |
+|------|--------|-----------|
+| [**Week 1**](1.1-Week1/) | Apr 27 - May 03 | AWS Onboarding, Account Setup, and Guided Console Tasks |
+| [**Week 2**](1.2-Week2/) | May 04 - May 10 | AWS CLI, CloudShell, Security MFA, and IAM Administration |
+| [**Week 3**](1.3-Week3/) | May 11 - May 17 | VPC Networking, Route Tables, NAT Gateways, and EICE SSH |
+| [**Week 4**](1.4-Week4/) | May 18 - May 24 | Capstone Ideation, Project Scoping, and Retail Data Flow Planning |
+| [**Week 5**](1.5-Week5/) | May 25 - May 31 | Hybrid DNS Resolver, VPC Peering, and AWS Transit Gateway Network |
+| [**Week 6**](1.6-Week6/) | Jun 01 - Jun 07 | EC2 Instance Classes, EBS Storage, and AWS Backup Schedule |
+| [**Week 7**](1.7-Week7/) | Jun 08 - Jun 14 | AWS Community Day, S3 Static Web Hosting, Versioning & CRR |
+| [**Week 8**](1.8-Week8/) | Jun 15 - Jun 21 | Disaster Recovery Strategies, FSx for Windows, and Active Directory |
+| [**Week 9**](1.9-Week9/) | Jun 22 - Jun 28 | Security Hub Audits, Least Privilege Lambda, and AWS KMS Encryption |
+| [**Week 10**](1.10-Week10/) | Jun 29 - Jul 05 | Overall System Architecture, Edge Security, and FinOps Pricing |
+| [**Week 11**](1.11-Week11/) | Jul 06 - Jul 12 | VPC Database Setup, AWS Glue ETL Pipeline, and XGBoost Model Training |
+| [**Week 12**](1.12-Week12/) | Jul 13 - Jul 19 | Glassmorphism Web Portal, Reverse Proxy Nginx, SSL, and E2E Cloud Testing |
 
-**Week 2**: [Explore the AWS Management Console interface, AWS CLI, and CloudShell tool](1.2-Week2/)
-
-**Week 3**: [Study VPC network routing theory, Internet Gateways, and public vs private subnets](1.3-Week3/)
-
-**Week 4**: [Research and propose personal research project ideas for the Capstone Project](1.4-Week4/)
-
-**Week 5**: [Study Hybrid DNS resolution, Route 53 Resolver Endpoints, and Resolver Rules](1.5-Week5/)
-
-**Week 6**: [Research Amazon EC2 Instance Types, comparing Intel, AMD, and AWS Graviton](1.6-Week6/)
-
-**Week 7**: [Attend the AWS First Cloud AI Journey Community Day technology event](1.7-Week7/)
-
-**Week 8**: [Study AWS Disaster Recovery strategies based on RTO and RPO metrics](1.8-Week8/)
-
-**Week 9**: [Execute Lab 18 to activate AWS Security Hub for compliance scanning](1.9-Week9/)
-
-**Week 10**: [Design overall system runtime architecture for Capstone Project](1.10-Week10/)
-
-**Week 11**: [Deploy VPC network structure and provision RDS databases (fashion-rds, training-db)](1.11-Week11/)
-
-**Week 12**: [Develop Glassmorphism Web Portal dashboard using React and Nodejs](1.12-Week12/)
-
----

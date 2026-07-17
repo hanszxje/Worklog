@@ -17,11 +17,11 @@ pre: " <b> 1.11. </b> "
 
 | Thứ | Công việc | Ngày |
 |---|---|---|
-| Thứ Hai | Triển khai hạ tầng mạng VPC. Khởi tạo hai cơ sở dữ liệu Amazon RDS PostgreSQL (`fashion-rds` và `training-db`). | 05/7 |
-| Thứ Ba | Tạo các S3 bucket lưu trữ mã nguồn trang web tĩnh (frontend) và lưu trữ tệp mô hình ML. | 05/7 |
-| Thứ Tư | Viết mã nguồn cho các Glue Jobs: Python Shell (`de-fashion-rds-extract`) và PySpark (`glue_feature_engineering.py`). | 05/7 |
-| Thứ Năm | Cấu hình máy chủ EC2 huấn luyện mô hình. Chạy script Python huấn luyện mô hình XGBoost Regressor. | 05/7 |
-| Thứ Sáu | Lập trình hàm AWS Lambda xử lý API dự báo, tích hợp API Gateway và bảo mật xác thực bằng Cognito. | 05/7 |
+| Thứ Hai | Triển khai hạ tầng mạng VPC. Khởi tạo hai cơ sở dữ liệu Amazon RDS PostgreSQL (`fashion-rds` và `training-db`). | 6/7 |
+| Thứ Ba | Tạo các S3 bucket lưu trữ mã nguồn trang web tĩnh (frontend) và lưu trữ tệp mô hình ML. | 7/7 |
+| Thứ Tư | Viết mã nguồn cho các Glue Jobs: Python Shell (`de-fashion-rds-extract`) và PySpark (`glue_feature_engineering.py`). | 8/7 |
+| Thứ Năm | Cấu hình máy chủ EC2 huấn luyện mô hình. Chạy script Python huấn luyện mô hình XGBoost Regressor. | 9/7 |
+| Thứ Sáu | Lập trình hàm AWS Lambda xử lý API dự báo, tích hợp API Gateway và bảo mật xác thực bằng Cognito. | 10/7 |
 
 **Kết quả đạt được trong tuần là gì:**
 - **Thứ Hai:**

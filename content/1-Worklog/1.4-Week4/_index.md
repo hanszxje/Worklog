@@ -16,11 +16,11 @@ pre: " <b> 1.4. </b> "
 
 | Day | Task | Date |
 |---|---|---|
-| Monday | Researched and drafted personal project proposals focusing on cloud-native solutions and machine learning. | May 17 |
-| Tuesday | Held team meeting to pitch ideas, compare individual proposals, and evaluate design feasibility. | May 17 |
-| Wednesday | Aligned on the shared project topic: 'Fashion Retail Web Application Architecture & Automated Machine Learning Pipeline for Revenue Forecasting'. | May 17 |
-| Thursday | Analyzed overstocking and stockout problems in retail fashion supply chains. Drafted relational database schemas. | May 17 |
-| Friday | Assigned development roles (frontend, backend, data pipeline) and initialized git repository branch structures. | May 17 |
+| Monday | Researched and drafted personal project proposals focusing on cloud-native solutions and machine learning. | May 18 |
+| Tuesday | Held team meeting to pitch ideas, compare individual proposals, and evaluate design feasibility. | May 19 |
+| Wednesday | Aligned on the shared project topic: 'Fashion Retail Web Application Architecture & Automated Machine Learning Pipeline for Revenue Forecasting'. | May 20 |
+| Thursday | Analyzed overstocking and stockout problems in retail fashion supply chains. Drafted relational database schemas. | May 21 |
+| Friday | Assigned development roles (frontend, backend, data pipeline) and initialized git repository branch structures. | May 22 |
 
 **Weekly results achieved:**
 - **Monday:**

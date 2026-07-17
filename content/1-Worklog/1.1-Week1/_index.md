@@ -1,6 +1,6 @@
 ---
 title: "Week 1"
-date: 2026-04-20
+date: 2026-04-26
 weight: 1
 chapter: false
 pre: " <b> 1.1. </b> "
@@ -16,15 +16,16 @@ pre: " <b> 1.1. </b> "
 
 | Day | Task | Date |
 |---|---|---|
-| Monday | Attended the Kickoff event of the AWS First Cloud AI Journey (FCAJ) program. Learned the overview of AWS Cloud computing technology and the pay-as-you-go pricing model. | Apr 20 |
-| Tuesday | Created a personal AWS Free Tier account for the internship, set up credit card payment details, and verified identity. | Apr 20 |
-| Wednesday | Configured cost management alerts (AWS Budgets) and claimed $200 in AWS Cloud Credits ($100 signup + $100 promo). | Apr 20 |
-| Thursday | Conducted preliminary research on the core cloud compute infrastructure, focusing on EC2 instance setup and S3 bucket structures. | Apr 20 |
-| Friday | Researched RDS databases and IAM permission boundary configurations. Performed teardown of all test instances. | Apr 20 |
+| Monday | Learned the overview of AWS Cloud computing technology and the pay-as-you-go pricing model. | Apr 27 |
+| Tuesday | Created a personal AWS Free Tier account for the internship, set up credit card payment details, and verified identity. | Apr 28 |
+| Wednesday | Configured cost management alerts (AWS Budgets) and claimed $200 in AWS Cloud Credits ($100 signup + $100 promo). | Apr 29 |
+| Thursday | Conducted preliminary research on the core cloud compute infrastructure, focusing on EC2 instance setup and S3 bucket structures. | Apr 30 |
+| Friday | Researched RDS databases and IAM permission boundary configurations. Performed teardown of all test instances. | May 01 |
+| Saturday | Attended the Kickoff event of the AWS First Cloud AI Journey (FCAJ) program. | May 02 |
 
 **Weekly results achieved:**
 - **Monday:**
-  - Result Achieved: AWS account activated. Gained basic understanding of the Pay-as-you-go model and AWS service ecosystem.
+  - Result Achieved: Gained basic understanding of the Pay-as-you-go model and AWS service ecosystem.
   - Lesson: Securing early billing notifications is crucial when starting a new cloud account.
 - **Tuesday:**
   - Result Achieved: Successfully completed payment card verification and received $100 introductory credit.
@@ -38,3 +39,6 @@ pre: " <b> 1.1. </b> "
 - **Friday:**
   - Result Achieved: Obtained basic database provisioning theory and secure identity settings under IAM.
   - Lesson: Developing the habit of cleanup immediately after training is crucial to prevent billing anomalies.
+- **Saturday:**
+  - Result Achieved: Successfully onboarding the FCAJ program and met program coordinators.
+  - Lesson: Networking with coordinators at kickoff ensures clear alignment of learning goals.

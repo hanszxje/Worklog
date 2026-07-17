@@ -16,11 +16,11 @@ pre: " <b> 1.8. </b> "
 
 | Day | Task | Date |
 |---|---|---|
-| Monday | Studied Disaster Recovery (DR) models, focusing on defining Recovery Time Objective (RTO) and Recovery Point Objective (RPO). | Jun 14 |
-| Tuesday | Compared architectural differences between Backup/Restore, Pilot Light, Warm Standby, and Multi-Site DR topologies. | Jun 14 |
-| Wednesday | Executed Lab 25, initiating the creation of an Amazon FSx for Windows File Server instance with Multi-AZ layout. | Jun 14 |
-| Thursday | Configured AWS Directory Service, setting up a Microsoft Active Directory server domain to join FSx. | Jun 14 |
-| Friday | Reviewed AWS security best practices: database encryption via KMS keys and user pools using Cognito. | Jun 14 |
+| Monday | Studied Disaster Recovery (DR) models, focusing on defining Recovery Time Objective (RTO) and Recovery Point Objective (RPO). | Jun 15 |
+| Tuesday | Compared architectural differences between Backup/Restore, Pilot Light, Warm Standby, and Multi-Site DR topologies. | Jun 16 |
+| Wednesday | Executed Lab 25, initiating the creation of an Amazon FSx for Windows File Server instance with Multi-AZ layout. | Jun 17 |
+| Thursday | Configured AWS Directory Service, setting up a Microsoft Active Directory server domain to join FSx. | Jun 18 |
+| Friday | Reviewed AWS security best practices: database encryption via KMS keys and user pools using Cognito. | Jun 19 |
 
 **Weekly results achieved:**
 - **Monday:**

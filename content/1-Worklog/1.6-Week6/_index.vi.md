@@ -16,11 +16,11 @@ pre: " <b> 1.6. </b> "
 
 | Thứ | Công việc | Ngày |
 |---|---|---|
-| Thứ Hai | Tìm hiểu phân loại máy chủ EC2 (General Purpose, Compute/Memory Optimized) và các kiến trúc vi xử lý đi kèm. | 31/5 |
-| Thứ Ba | Nghiên cứu ổ đĩa Elastic Block Store (EBS), so sánh gp2/gp3, IOPS và bộ nhớ tạm Instance Store. | 31/5 |
-| Thứ Tư | Tìm hiểu cơ chế co giãn tự động Auto Scaling và định tuyến cân bằng tải Elastic Load Balancing. | 31/5 |
-| Thứ Năm | Nghiên cứu giải pháp chia sẻ dữ liệu qua Amazon EFS (Linux NFS) và Amazon FSx (Windows SMB). | 31/5 |
-| Thứ Sáu | Thực hành Lab 13, thiết lập kế hoạch sao lưu AWS Backup, cấu hình vòng đời dữ liệu và chạy thử khôi phục. | 31/5 |
+| Thứ Hai | Tìm hiểu phân loại máy chủ EC2 (General Purpose, Compute/Memory Optimized) và các kiến trúc vi xử lý đi kèm. | 1/6 |
+| Thứ Ba | Nghiên cứu ổ đĩa Elastic Block Store (EBS), so sánh gp2/gp3, IOPS và bộ nhớ tạm Instance Store. | 2/6 |
+| Thứ Tư | Tìm hiểu cơ chế co giãn tự động Auto Scaling và định tuyến cân bằng tải Elastic Load Balancing. | 3/6 |
+| Thứ Năm | Nghiên cứu giải pháp chia sẻ dữ liệu qua Amazon EFS (Linux NFS) và Amazon FSx (Windows SMB). | 4/6 |
+| Thứ Sáu | Thực hành Lab 13, thiết lập kế hoạch sao lưu AWS Backup, cấu hình vòng đời dữ liệu và chạy thử khôi phục. | 5/6 |
 
 **Kết quả đạt được trong tuần là gì:**
 - **Thứ Hai:**
@@ -33,8 +33,8 @@ pre: " <b> 1.6. </b> "
   - Kết quả đạt được: Hiểu rõ cơ chế điều hướng gói tin dựa trên đường dẫn (path-based routing) và luật kiểm tra sức khỏe máy chủ.
   - Bài học: ALB hoạt động ở tầng ứng dụng (L7) xử lý HTTP/HTTPS, còn NLB hoạt động ở tầng giao vận (L4) tối ưu cho TCP/UDP.
 - **Thứ Năm:**
-  - Kết quả đạt được: Hiểu rõ tình huống áp dụng khi cần nhiều máy chủ EC2 cùng ghi dữ liệu vào một thư mục dùng chung.
-  - Bài học: EFS tự động mở rộng dung lượng và băng thông, rất phù hợp cho lưu trữ dữ liệu của Docker Containers.
+  - Kết quả đạt được: Chi tiết các thiết lập hệ thống chia sẻ tệp tin của Amazon EFS và Amazon FSx.
+  - Bài học: EFS tự động co giãn dung lượng và hiệu năng, thích hợp cho hệ thống container microservices.
 - **Thứ Sáu:**
   - Kết quả đạt được: Cấu hình sao lưu định kỳ hàng ngày thành công. Khôi phục máy chủ ảo thử nghiệm từ bản backup chạy ổn định.
   - Bài học: Cấu hình tự động chuyển bản sao lưu cũ sang Archive giúp tối ưu hóa chi phí lưu trữ lâu dài.

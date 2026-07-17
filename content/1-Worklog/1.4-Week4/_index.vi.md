@@ -16,11 +16,11 @@ pre: " <b> 1.4. </b> "
 
 | Thứ | Công việc | Ngày |
 |---|---|---|
-| Thứ Hai | Nghiên cứu và viết bản đề xuất ý tưởng cá nhân, tập trung vào kiến trúc cloud-native và tích hợp học máy. | 17/5 |
-| Thứ Ba | Thảo luận nhóm để trình bày ý tưởng, so sánh các đề xuất cá nhân và đánh giá tính khả thi triển khai. | 17/5 |
-| Thứ Tư | Thống nhất lựa chọn đề tài dự án chung: 'Kiến trúc Ứng dụng Web Fashion Retail & Pipeline Học Máy tự động cho Dự báo Doanh thu'. | 17/5 |
-| Thứ Năm | Phân tích bài toán thừa hàng/hụt hàng trong chuỗi bán lẻ thời trang. Thiết kế phác thảo cơ sở dữ liệu quan hệ. | 17/5 |
-| Thứ Sáu | Phân chia vai trò phát triển trong nhóm (frontend, backend, data pipeline) và khởi tạo cấu trúc nhánh Git. | 17/5 |
+| Thứ Hai | Nghiên cứu và viết bản đề xuất ý tưởng cá nhân, tập trung vào kiến trúc cloud-native và tích hợp học máy. | 18/5 |
+| Thứ Ba | Thảo luận nhóm để trình bày ý tưởng, so sánh các đề xuất cá nhân và đánh giá tính khả thi triển khai. | 19/5 |
+| Thứ Tư | Thống nhất lựa chọn đề tài dự án chung: 'Kiến trúc Ứng dụng Web Fashion Retail & Pipeline Học Máy tự động cho Dự báo Doanh thu'. | 20/5 |
+| Thứ Năm | Phân tích bài toán thừa hàng/hụt hàng trong chuỗi bán lẻ thời trang. Thiết kế phác thảo cơ sở dữ liệu quan hệ. | 21/5 |
+| Thứ Sáu | Phân chia vai trò phát triển trong nhóm (frontend, backend, data pipeline) và khởi tạo cấu trúc nhánh Git. | 22/5 |
 
 **Kết quả đạt được trong tuần là gì:**
 - **Thứ Hai:**

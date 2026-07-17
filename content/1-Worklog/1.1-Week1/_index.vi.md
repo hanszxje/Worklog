@@ -1,6 +1,6 @@
 ---
 title: "Tuần 1"
-date: 2026-04-20
+date: 2026-04-26
 weight: 1
 chapter: false
 pre: " <b> 1.1. </b> "
@@ -16,15 +16,16 @@ pre: " <b> 1.1. </b> "
 
 | Thứ | Công việc | Ngày |
 |---|---|---|
-| Thứ Hai | Tham gia buổi Kickoff chương trình AWS First Cloud AI Journey (FCAJ). Tìm hiểu tổng quan về điện toán đám mây AWS và mô hình tính phí pay-as-you-go. | 20/4 |
-| Thứ Ba | Khởi tạo tài khoản AWS Free Tier cá nhân phục vụ thực tập, thiết lập phương thức thanh toán thẻ và xác thực danh tính. | 20/4 |
-| Thứ Tư | Cấu hình cảnh báo quản lý ngân sách (AWS Budgets) và nhận tổng cộng 200 USD AWS Credit hỗ trợ học tập. | 20/4 |
-| Thứ Năm | Nghiên cứu sơ bộ nhóm dịch vụ cơ sở hạ tầng tính toán đám mây cốt lõi, tập trung vào máy ảo EC2 và lưu trữ tệp tin S3. | 20/4 |
-| Thứ Sáu | Tìm hiểu lý thuyết cơ bản về cơ sở dữ liệu RDS và các quy tắc phân quyền IAM, dọn dẹp sạch các tài nguyên thử nghiệm. | 20/4 |
+| Thứ Hai | Tìm hiểu tổng quan về điện toán đám mây AWS và mô hình tính phí pay-as-you-go. | 27/4 |
+| Thứ Ba | Khởi tạo tài khoản AWS Free Tier cá nhân phục vụ thực tập, thiết lập phương thức thanh toán thẻ và xác thực danh tính. | 28/4 |
+| Thứ Tư | Cấu hình cảnh báo quản lý ngân sách (AWS Budgets) và nhận tổng cộng 200 USD AWS Credit hỗ trợ học tập. | 29/4 |
+| Thứ Năm | Nghiên cứu sơ bộ nhóm dịch vụ cơ sở hạ tầng tính toán đám mây cốt lõi, tập trung vào máy ảo EC2 và lưu trữ tệp tin S3. | 30/4 |
+| Thứ Sáu | Tìm hiểu lý thuyết cơ bản về cơ sở dữ liệu RDS và các quy tắc phân quyền IAM, dọn dẹp sạch các tài nguyên thử nghiệm. | 1/5 |
+| Thứ Bảy | Tham gia buổi Kickoff chương trình AWS First Cloud AI Journey (FCAJ). | 2/5 |
 
 **Kết quả đạt được trong tuần là gì:**
 - **Thứ Hai:**
-  - Kết quả đạt được: Kích hoạt tài khoản AWS thành công. Hiểu được nguyên tắc cốt lõi của mô hình Pay-as-you-go và hệ sinh thái dịch vụ đám mây.
+  - Kết quả đạt được: Hiểu được nguyên tắc cốt lõi của mô hình Pay-as-you-go và hệ sinh thái dịch vụ đám mây.
   - Bài học: Thiết lập cảnh báo chi phí sớm là bước cực kỳ quan trọng khi bắt đầu với tài khoản cloud mới.
 - **Thứ Ba:**
   - Kết quả đạt được: Hoàn thành xác thực thẻ thanh toán thành công và nhận được $100 credit khởi đầu chương trình.
@@ -38,3 +39,6 @@ pre: " <b> 1.1. </b> "
 - **Thứ Sáu:**
   - Kết quả đạt được: Hiểu rõ cơ chế phân quyền truy cập thông qua IAM và cách thiết lập CSDL quan hệ RDS.
   - Bài học: Hình thành phản xạ dọn dẹp sạch tài nguyên ngay sau khi học xong là kỹ năng tối quan trọng của kỹ sư đám mây.
+- **Thứ Bảy:**
+  - Kết quả đạt được: Nhập học chương trình FCAJ thành công và gặp gỡ ban tổ chức điều phối chương trình.
+  - Bài học: Kết nối với ban tổ chức tại buổi kickoff giúp định hướng rõ ràng mục tiêu học tập.

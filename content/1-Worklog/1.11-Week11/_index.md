@@ -17,11 +17,11 @@ pre: " <b> 1.11. </b> "
 
 | Day | Task | Date |
 |---|---|---|
-| Monday | Launched the VPC network infrastructure. Provisioned the target RDS instances (`fashion-rds` and `training-db`). | Jul 05 |
-| Tuesday | Created target Amazon S3 buckets for static web asset hosting and ML model repository structures. | Jul 05 |
-| Wednesday | Coded the AWS Glue jobs: Python Shell job (`de-fashion-rds-extract`) and PySpark Spark job (`glue_feature_engineering.py`). | Jul 05 |
-| Thursday | Configured the machine learning training EC2 server. Executed the training script to train the XGBoost Regressor model. | Jul 05 |
-| Friday | Programmed the AWS Lambda forecast API, integrated with API Gateway REST endpoints and Cognito JWT authorization. | Jul 05 |
+| Monday | Launched the VPC network infrastructure. Provisioned the target RDS instances (`fashion-rds` and `training-db`). | Jul 06 |
+| Tuesday | Created target Amazon S3 buckets for static web asset hosting and ML model repository structures. | Jul 07 |
+| Wednesday | Coded the AWS Glue jobs: Python Shell job (`de-fashion-rds-extract`) and PySpark Spark job (`glue_feature_engineering.py`). | Jul 08 |
+| Thursday | Configured the machine learning training EC2 server. Executed the training script to train the XGBoost Regressor model. | Jul 09 |
+| Friday | Programmed the AWS Lambda forecast API, integrated with API Gateway REST endpoints and Cognito JWT authorization. | Jul 10 |
 
 **Weekly results achieved:**
 - **Monday:**

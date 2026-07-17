@@ -6,18 +6,35 @@ chapter: false
 pre: " <b> 1.4. </b> "
 ---
 
-# Work Log: Capstone Ideation, Project Scoping, and Retail Data Flow Planning
+**Weekly objectives:**
+- Research and propose personal research project ideas for the Capstone Project.
+- Conduct group discussions, align requirements, and select the retail-forecasting project topic.
+- Allocate project development roles and design database schemas.
+- Analyze retail business problems to plan data engineering pipeline layouts.
 
-> **Week 4 - May 17, 2026:** Detailed weekly progress log.
+**Tasks to be deployed this week:**
 
----
+| Day | Task | Date |
+|---|---|---|
+| Monday | Researched and drafted personal project proposals focusing on cloud-native solutions and machine learning. | May 17 |
+| Tuesday | Held team meeting to pitch ideas, compare individual proposals, and evaluate design feasibility. | May 17 |
+| Wednesday | Aligned on the shared project topic: 'Fashion Retail Web Application Architecture & Automated Machine Learning Pipeline for Revenue Forecasting'. | May 17 |
+| Thursday | Analyzed overstocking and stockout problems in retail fashion supply chains. Drafted relational database schemas. | May 17 |
+| Friday | Assigned development roles (frontend, backend, data pipeline) and initialized git repository branch structures. | May 17 |
 
-### Objectives & Learnings for the Week
-
-- Researched and proposed personal research project ideas for the Capstone Project.
-- Conducted group discussions, matched requirements, and agreed on a shared project topic: 'Fashion Retail Web Application Architecture & Automated Machine Learning Pipeline for Revenue Forecasting on Cloud-Native AWS'.
-- Allocated specific roles among team members, analyzed the overstocking/stockout problems in retail fashion chains to plan database and data flow design.
-
----
-
-*Reference: [First Cloud Journey - AWS Study Group](https://cloudjourney.awsstudygroup.com/)*
+**Weekly results achieved:**
+- **Monday:**
+  - Result Achieved: Created personal draft proposals exploring automated workflows and predictive analytics.
+  - Lesson: Aligning project ideas with industry requirements ensures practical learning outcomes.
+- **Tuesday:**
+  - Result Achieved: Compared proposals, decided to combine web portal development with retail analytics.
+  - Lesson: Team consensus on architectural components early prevents integration conflicts later.
+- **Wednesday:**
+  - Result Achieved: Drafted initial project scope, outline, and target deliverables.
+  - Lesson: Clearly defined scope parameters protect the project timeline from features creep.
+- **Thursday:**
+  - Result Achieved: Designed schema boundaries isolating transactional schemas from analytical feature tables.
+  - Lesson: Decoupling database zones prevents heavy machine learning reads from affecting web users.
+- **Friday:**
+  - Result Achieved: Established role boundaries. Created Git repository with feature-branch policies.
+  - Lesson: Setting up branch policies and commit guidelines ensures code quality and team speed.

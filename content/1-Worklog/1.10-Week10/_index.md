@@ -6,19 +6,35 @@ chapter: false
 pre: " <b> 1.10. </b> "
 ---
 
-# Work Log: Overall System Architecture, Edge Security, and FinOps Pricing
+**Weekly objectives:**
+- Design overall system runtime architecture for Capstone Project.
+- Design Edge Security layer using AWS WAF and CloudFront CDN.
+- Design asynchronous ETL pipeline connecting RDS PostgreSQL to S3 Parquet.
+- Apply AWS Well-Architected Framework 6 pillars and calculate cost via Pricing Calculator.
 
-> **Week 10 - June 28, 2026:** Detailed weekly progress log.
+**Tasks to be deployed this week:**
 
----
+| Day | Task | Date |
+|---|---|---|
+| Monday | Designed the overall system runtime architecture diagram, mapping client traffic to compute servers. | Jun 28 |
+| Tuesday | Designed the Edge Security layers, combining Amazon CloudFront CDN with AWS WAF firewall protections. | Jun 28 |
+| Wednesday | Designed the asynchronous ETL pipeline architecture, mapping Glue Jobs connecting RDS PostgreSQL to S3. | Jun 28 |
+| Thursday | Evaluated the system architecture designs against the 6 pillars of the AWS Well-Architected Framework. | Jun 28 |
+| Friday | Estimated monthly running costs of all planned resources using the AWS Pricing Calculator. | Jun 28 |
 
-### Objectives & Learnings for the Week
-
-- Designed the overall infrastructure network diagram and data flow (Runtime Architecture) for the Capstone Project: Fashion Retail & ML Forecasting Pipeline.
-- Designed the Edge Security layer integrating AWS WAF to block DDoS/Spam, combined with Amazon CloudFront CDN and an Application Load Balancer (ALB).
-- Designed the asynchronous ETL data pipeline, connecting the operational database (RDS PostgreSQL OLTP) to extract raw data to S3 Parquet, running Spark feature engineering on AWS Glue, and ingestion into the training database (RDS PostgreSQL OLAP Feature Store).
-- Optimized the architecture based on the 6 pillars of the AWS Well-Architected Framework and conducted FinOps cost estimations using the AWS Pricing Calculator.
-
----
-
-*Reference: [First Cloud Journey - AWS Study Group](https://cloudjourney.awsstudygroup.com/)*
+**Weekly results achieved:**
+- **Monday:**
+  - Result Achieved: Approved decoupled runtime topology separating backend services from predictive training nodes.
+  - Lesson: A decoupled layout prevents heavy machine learning training jobs from impacting frontend web performance.
+- **Tuesday:**
+  - Result Achieved: Created firewall rules to block SQL injection and Rate Limiting constraints to prevent DDoS attacks.
+  - Lesson: Caching static frontend assets in CloudFront Edge locations reduces latency and server load.
+- **Wednesday:**
+  - Result Achieved: Drafted raw data extraction from business tables and Pyspark lag feature calculation logic.
+  - Lesson: Storing feature tables in a separate database allows the model to query ML parameters rapidly.
+- **Thursday:**
+  - Result Achieved: Optimized security boundaries and reliability setups (multi-AZ databases, automated backups).
+  - Lesson: Well-architected reviews ensure systems remain resilient, secure, and cost-efficient.
+- **Friday:**
+  - Result Achieved: Calculated predicted monthly budget, choosing db.t3.micro and t3.medium resources to stay cost-optimal.
+  - Lesson: Calculating budget estimations before deployment avoids unexpected high billing surprises.

@@ -1,24 +1,40 @@
 ---
 title: "Week 2"
-date: 2026-05-03
+date: 2026-04-27
 weight: 2
 chapter: false
 pre: " <b> 1.2. </b> "
 ---
 
-# Work Log: AWS CLI, CloudShell, Security MFA, and IAM Administration
+**Weekly objectives:**
+- Explore the AWS Management Console interface, AWS CLI, and CloudShell tool.
+- Research cloud security management and Multi-Factor Authentication (MFA/2FA) configurations.
+- Understand the differences between IAM Policies and IAM Roles for security access control.
+- Master the theoretical knowledge of Module 02 on AWS Global Infrastructure.
 
-> **Week 2 - May 03, 2026:** Detailed weekly progress log.
+**Tasks to be deployed this week:**
 
----
+| Day | Task | Date |
+|---|---|---|
+| Monday | Explored the AWS Management Console layout and researched the AWS Global Infrastructure layout. | Apr 27 |
+| Tuesday | Installed the AWS CLI package on local machine, configured security credentials, and launched CloudShell sessions. | Apr 27 |
+| Wednesday | Configured virtual Multi-Factor Authentication (MFA) on the Root Account using Google Authenticator. | Apr 27 |
+| Thursday | Studied IAM Policies, IAM Roles, and JSON policy structures. Designed a custom policy template. | Apr 27 |
+| Friday | Created a developer IAM User account, assigned it to an administrator group, and tested access restrictions. | Apr 27 |
 
-### Objectives & Learnings for the Week
-
-- Explored the AWS Management Console interface, learned how to use and configure the AWS CLI and CloudShell tool.
-- Conducted in-depth research on cloud security management, configured Multi-Factor Authentication (MFA/2FA) for the Root account to ensure absolute security.
-- Studied the differences and delegation of permissions using IAM Policies and IAM Roles, created an IAM User account for daily operations.
-- Completed and mastered the theoretical knowledge of Module 02 on the AWS global infrastructure.
-
----
-
-*Reference: [First Cloud Journey - AWS Study Group](https://cloudjourney.awsstudygroup.com/)*
+**Weekly results achieved:**
+- **Monday:**
+  - Result Achieved: Familiarized with service search, region selector, and dashboard layout. Completed Module 02 theory.
+  - Lesson: AWS Regions contain multiple isolated AZs to prevent concurrent regional outages.
+- **Tuesday:**
+  - Result Achieved: Verified connection between local CLI tool and AWS Cloud using access key credentials.
+  - Lesson: CloudShell abstracts browser terminal setups and runs command queries with current credentials automatically.
+- **Wednesday:**
+  - Result Achieved: Root account secured with dual authentication parameters. Verified login flow.
+  - Lesson: Root accounts should never be used for daily operational tasks; restrict its usage to billing changes.
+- **Thursday:**
+  - Result Achieved: Learned how JSON documents specify Effect, Action, Resource, and Condition arguments.
+  - Lesson: Policies grant explicit access rules to users, while Roles are assumed by compute instances or services.
+- **Friday:**
+  - Result Achieved: Successfully restricted root usage by shifting daily cloud workflows to the newly created developer IAM User.
+  - Lesson: Applying the principle of least privilege ensures users only access resources critical to their job description.

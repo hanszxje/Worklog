@@ -6,19 +6,35 @@ chapter: false
 pre: " <b> 1.9. </b> "
 ---
 
-# Work Log: Security Hub Audits, Least Privilege Lambda, and AWS KMS Encryption
+**Weekly objectives:**
+- Execute Lab 18 to activate AWS Security Hub for compliance scanning.
+- Execute Lab 22 to configure secure IAM roles for AWS Lambda.
+- Study database services RDS, Aurora, Redshift, and ElastiCache.
+- Execute Lab 28 (Region-based IAM), Lab 30 (Boundaries), and Lab 33 (KMS, CloudTrail).
 
-> **Week 9 - June 21, 2026:** Detailed weekly progress log.
+**Tasks to be deployed this week:**
 
----
+| Day | Task | Date |
+|---|---|---|
+| Monday | Executed Lab 18, enabling AWS Security Hub and configuring standard CIS AWS Foundations benchmarks. | Jun 21 |
+| Tuesday | Executed Lab 22, creating a secure Lambda execution role and restricting security group ports. | Jun 21 |
+| Wednesday | Studied Database classifications on AWS, comparing relational RDS/Aurora against caching solutions like ElastiCache. | Jun 21 |
+| Thursday | Executed Lab 28 and Lab 30, exploring region-restricted IAM policies and Permission Boundaries. | Jun 21 |
+| Friday | Executed Lab 33, setting up AWS KMS key encryption on S3 buckets and configuring AWS CloudTrail log trails. | Jun 21 |
 
-### Objectives & Learnings for the Week
-
-- Completed Lab 18: Enabling AWS Security Hub to scan and evaluate security findings following AWS Security Best Practices.
-- Completed Lab 22: Configuring secure Security Groups and IAM Roles for AWS Lambda following the principle of least privilege.
-- Researched Module 06 Database theory, covering Amazon RDS, Amazon Aurora, Amazon Redshift, Amazon ElastiCache, and concepts like OLTP, OLAP, Primary/Foreign Keys, and Indexes.
-- Completed Lab 28 (Region-based IAM Roles/Policies), Lab 30 (Permission Boundaries), and Lab 33 (KMS Encryption on S3, configuring CloudTrail for API logging).
-
----
-
-*Reference: [First Cloud Journey - AWS Study Group](https://cloudjourney.awsstudygroup.com/)*
+**Weekly results achieved:**
+- **Monday:**
+  - Result Achieved: Obtained overall security score and prioritized list of resource security improvements.
+  - Lesson: Security Hub centralizes security alerts from multiple services, providing a single security monitoring dashboard.
+- **Tuesday:**
+  - Result Achieved: Deployed test Lambda in VPC subnets, restricting access rules targeting internal resources only.
+  - Lesson: Lambda execution roles must explicitly define target cloudwatch logging write rules.
+- **Wednesday:**
+  - Result Achieved: Understood OLTP (transactional databases) vs OLAP (analytical data warehouses like Redshift).
+  - Lesson: Primary/Foreign keys enforce relational schemas, while Indexes optimize query response speeds.
+- **Thursday:**
+  - Result Achieved: Created user policy templates restricting resource deployment to ap-southeast-1 region only.
+  - Lesson: Permission boundaries define the maximum privileges an IAM entity can have, preventing privilege escalation.
+- **Friday:**
+  - Result Achieved: Enabled audit trail logging of all administrative API calls across the AWS account.
+  - Lesson: CloudTrail logs are critical for security compliance audits and tracing resource modification history.

@@ -6,20 +6,36 @@ chapter: false
 pre: " <b> 1.11. </b> "
 ---
 
-# Work Log: VPC Database Setup, AWS Glue ETL Pipeline, and XGBoost Model Training
+**Weekly objectives:**
+- Deploy VPC network structure and provision RDS databases (fashion-rds, training-db).
+- Create S3 buckets for frontend web assets and ML model storage.
+- Configure AWS Glue Python Shell raw extraction job and PySpark ETL job.
+- Configure ML training EC2 server and train XGBoost forecasting model.
+- Deploy serverless forecast API via Lambda, API Gateway, and Cognito.
 
-> **Week 11 - July 05, 2026:** Detailed weekly progress log.
+**Tasks to be deployed this week:**
 
----
+| Day | Task | Date |
+|---|---|---|
+| Monday | Launched the VPC network infrastructure. Provisioned the target RDS instances (`fashion-rds` and `training-db`). | Jul 05 |
+| Tuesday | Created target Amazon S3 buckets for static web asset hosting and ML model repository structures. | Jul 05 |
+| Wednesday | Coded the AWS Glue jobs: Python Shell job (`de-fashion-rds-extract`) and PySpark Spark job (`glue_feature_engineering.py`). | Jul 05 |
+| Thursday | Configured the machine learning training EC2 server. Executed the training script to train the XGBoost Regressor model. | Jul 05 |
+| Friday | Programmed the AWS Lambda forecast API, integrated with API Gateway REST endpoints and Cognito JWT authorization. | Jul 05 |
 
-### Objectives & Learnings for the Week
-
-- Deployed the VPC network infrastructure and two independent Amazon RDS PostgreSQL databases (fashion-rds and training-db) to guarantee performance isolation.
-- Set up the S3 bucket for frontend hosting and the S3 bucket for ML model artifacts.
-- Configured the AWS Glue Python Shell job (de-fashion-rds-extract) for raw data extraction and the AWS Glue PySpark job (glue_feature_engineering.py) for parallel time-series feature engineering (lags, rolling averages, sales velocity).
-- Configured the EC2 training server to run the Python training script in the background, fitting the XGBoost Regressor model and automatically uploading the sales_forecast_model_v1.pkl to the S3 Bucket.
-- Deployed the AWS Lambda Forecast API and routed via API Gateway integrated with a Cognito User Pool (JWT), configuring AWS WAF for API protection.
-
----
-
-*Reference: [First Cloud Journey - AWS Study Group](https://cloudjourney.awsstudygroup.com/)*
+**Weekly results achieved:**
+- **Monday:**
+  - Result Achieved: Databases online and isolated inside private subnet groups with security boundaries configured.
+  - Lesson: Placing databases inside private subnet groups protects records from external scanning threats.
+- **Tuesday:**
+  - Result Achieved: Bucket access policies configured. S3 static web hosting configuration established.
+  - Lesson: Exposing frontend resources requires configuring public read access policies while keeping model buckets private.
+- **Wednesday:**
+  - Result Achieved: Configured database connection profiles and jar dependency libraries (PostgreSQL JDBC).
+  - Lesson: AWS Glue requires JDBC drivers uploaded to S3 to connect and extract database tables.
+- **Thursday:**
+  - Result Achieved: Model successfully fitted on lag sales features. Automatically exported `sales_forecast_model_v1.pkl` to S3.
+  - Lesson: Storing ML parameters in S3 isolates training workloads from runtime prediction functions.
+- **Friday:**
+  - Result Achieved: Successfully queried forecasts from public API endpoints secured with token parameters.
+  - Lesson: Serverless APIs scale automatically with request volumes, reducing running costs to $0 during inactive hours.

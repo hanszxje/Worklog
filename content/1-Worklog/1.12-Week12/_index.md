@@ -6,19 +6,36 @@ chapter: false
 pre: " <b> 1.12. </b> "
 ---
 
-# Work Log: Glassmorphism Web Portal, Reverse Proxy Nginx, SSL, and E2E Cloud Testing
+**Weekly objectives:**
+- Develop Glassmorphism Web Portal dashboard using React and Node.js.
+- Deploy web portal to Ubuntu EC2 server, running background PM2 process.
+- Configure Nginx reverse proxy to route port 80 traffic to internal port.
+- Secure web portal domain using Let's Encrypt SSL certificates via Certbot.
+- Conduct End-to-End integration testing across multiple user roles.
 
-> **Week 12 - July 12, 2026:** Detailed weekly progress log.
+**Tasks to be deployed this week:**
 
----
+| Day | Task | Date |
+|---|---|---|
+| Monday | Programmed the ReactJS frontend dashboard, integrating Plotly.js charts displaying actual vs forecast sales. | Jul 12 |
+| Tuesday | Provisioned production Ubuntu EC2 instance. Cloned codebase, configured environment variables, and configured PM2 runtime. | Jul 12 |
+| Wednesday | Installed and configured Nginx reverse proxy server policies on the production Ubuntu instance. | Jul 12 |
+| Thursday | Configured domain settings, ran Certbot Let's Encrypt client utilities to generate secure SSL certificates. | Jul 12 |
+| Friday | Conducted End-to-End integration testing across multiple user roles (Associate, Store Manager, Admin). Finalized reports. | Jul 12 |
 
-### Objectives & Learnings for the Week
-
-- Programmed the Web Portal interface (ReactJS, Node.js) supporting multi-language (i18n), Glassmorphism Light/Dark modes, integrated 2-factor authentication (TOTP MFA), 7 user role-based access control (RBAC), Mapbox GL JS maps for store locations, Plotly.js charts displaying actual vs forecast sales, and stockout alerts.
-- Deployed the Web Application to an Ubuntu EC2 server, configuring PM2 for continuous background process execution, Nginx as a Reverse Proxy, and SSL HTTPS certificates via Certbot Let's Encrypt.
-- Conducted comprehensive End-to-End (E2E) testing in the Cloud environment across various roles (Sales Staff, Store Manager, Director) to verify correct permission controls.
-- Finalized the internship graduation report, Worklog, Project Proposal, and Workshop deployment guide in both English and Vietnamese. Submitted the final report.
-
----
-
-*Reference: [First Cloud Journey - AWS Study Group](https://cloudjourney.awsstudygroup.com/)*
+**Weekly results achieved:**
+- **Monday:**
+  - Result Achieved: Created interactive UI dashboard displaying store maps and stockout alert warning flags.
+  - Lesson: Using glassmorphism theme components enhances UI visual appeal and user experience.
+- **Tuesday:**
+  - Result Achieved: Application running continuously in the background. PM2 auto-restart policy enabled.
+  - Lesson: PM2 manages processes continuously, preventing server crashes from taking the web application offline.
+- **Wednesday:**
+  - Result Achieved: Incoming port 80 traffic mapped successfully to internal port 3000 backend application services.
+  - Lesson: Using Nginx as a reverse proxy protects node applications by abstracting backend port exposures.
+- **Thursday:**
+  - Result Achieved: Secure SSL certificates installed. Nginx auto-redirects port 80 requests to encrypted port 443 routes.
+  - Lesson: Securing web endpoints with SSL is mandatory to protect sensitive user login tokens from transit sniffing.
+- **Friday:**
+  - Result Achieved: Confirmed correct permission controls and prediction visualization accuracy. Submitted final internship reports.
+  - Lesson: End-to-end testing validates correct system behaviors before presenting final deliverables to stakeholders.

@@ -10,28 +10,28 @@ During my internship at AWS Vietnam under the guidance of Mr. Nguyen Gia Hung, I
 
 ---
 
-**Week 1**: [AWS Onboarding, Account Setup, and Guided Console Tasks](1.1-Week1/)
+**Week 1**: [Register and configure a new AWS account, obtaining $100 in initial credits from the program](1.1-Week1/)
 
-**Week 2**: [AWS CLI, CloudShell, Security MFA, and IAM Administration](1.2-Week2/)
+**Week 2**: [Explore the AWS Management Console interface, AWS CLI, and CloudShell tool](1.2-Week2/)
 
-**Week 3**: [VPC Networking, Route Tables, NAT Gateways, and EICE SSH](1.3-Week3/)
+**Week 3**: [Study VPC network routing theory, Internet Gateways, and public vs private subnets](1.3-Week3/)
 
-**Week 4**: [Capstone Ideation, Project Scoping, and Retail Data Flow Planning](1.4-Week4/)
+**Week 4**: [Research and propose personal research project ideas for the Capstone Project](1.4-Week4/)
 
-**Week 5**: [Hybrid DNS Resolver, VPC Peering, and AWS Transit Gateway Network](1.5-Week5/)
+**Week 5**: [Study Hybrid DNS resolution, Route 53 Resolver Endpoints, and Resolver Rules](1.5-Week5/)
 
-**Week 6**: [EC2 Instance Classes, EBS Storage, and AWS Backup Schedule](1.6-Week6/)
+**Week 6**: [Research Amazon EC2 Instance Types, comparing Intel, AMD, and AWS Graviton](1.6-Week6/)
 
-**Week 7**: [AWS Community Day, S3 Static Web Hosting, Versioning & CRR](1.7-Week7/)
+**Week 7**: [Attend the AWS First Cloud AI Journey Community Day technology event](1.7-Week7/)
 
-**Week 8**: [Disaster Recovery Strategies, FSx for Windows, and Active Directory](1.8-Week8/)
+**Week 8**: [Study AWS Disaster Recovery strategies based on RTO and RPO metrics](1.8-Week8/)
 
-**Week 9**: [Security Hub Audits, Least Privilege Lambda, and AWS KMS Encryption](1.9-Week9/)
+**Week 9**: [Execute Lab 18 to activate AWS Security Hub for compliance scanning](1.9-Week9/)
 
-**Week 10**: [Overall System Architecture, Edge Security, and FinOps Pricing](1.10-Week10/)
+**Week 10**: [Design overall system runtime architecture for Capstone Project](1.10-Week10/)
 
-**Week 11**: [VPC Database Setup, AWS Glue ETL Pipeline, and XGBoost Model Training](1.11-Week11/)
+**Week 11**: [Deploy VPC network structure and provision RDS databases (fashion-rds, training-db)](1.11-Week11/)
 
-**Week 12**: [Glassmorphism Web Portal, Reverse Proxy Nginx, SSL, and E2E Cloud Testing](1.12-Week12/)
+**Week 12**: [Develop Glassmorphism Web Portal dashboard using React and Nodejs](1.12-Week12/)
 
 ---

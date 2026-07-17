@@ -1,28 +1,37 @@
 ---
-title: "Worklog"
-date: 2024-06-08
+title: "Work Log"
+date: 2024-06-30
 weight: 1
 chapter: false
 pre: " <b> 1. </b> "
 ---
 
-This is my worklog throughout the **First Cloud AI Journey (FCAJ)** internship program - an internship focused on Cloud and AI on the AWS platform. Each weekly entry documents learning objectives, services explored, hands-on tasks completed, and key takeaways.
-
-The program spans **12 weeks** (April 20 - July 15, 2026), covering topics from foundational to advanced levels in cloud computing, data engineering, analytics, security, and system architecture on AWS.
+During my internship at AWS Vietnam under the guidance of Mr. Nguyen Gia Hung, I kept a weekly log of my activities, tasks, and learnings. Over the course of 12 weeks, I progressed from initial cloud onboarding and network setup to designing and deploying a complete production-ready machine learning forecasting pipeline and retail web application.
 
 ---
 
-| Week | Period | Focus Area |
-|------|--------|-----------|
-| [**Week 1**](1.1-Week1/) | Apr 20 - Apr 26 | Account Setup, AWS Credits & 5 Hands-On Tasks (EC2, Bedrock, Budgets, Lambda, RDS) |
-| [**Week 2**](1.2-Week2/) | Apr 27 - May 3 | Multi-Layer Cost Monitoring, Advanced Analytics & Foundational AWS Theory |
-| [**Week 3**](1.3-Week3/) | May 4 - May 10 | Workshop Architecture Planning & Overview |
-| [**Week 4**](1.4-Week4/) | May 11 - May 17 | Network Setup: CloudFront & Application Load Balancer |
-| [**Week 5**](1.5-Week5/) | May 18 - May 24 | Network Setup: EC2 Web Server, Target Group & Auto Scaling Group |
-| [**Week 6**](1.6-Week6/) | May 25 - May 31 | Database Setup: Business RDS, Training RDS & Security Configuration |
-| [**Week 7**](1.7-Week7/) | Jun 1 - Jun 7 | Data Engineering: AWS Glue ETL Jobs & Raw Ingestion |
-| [**Week 8**](1.8-Week8/) | Jun 8 - Jun 14 | Machine Learning: Model Training Script & S3 Model Storage |
-| [**Week 9**](1.9-Week9/) | Jun 15 - Jun 21 | Serverless Integration: Lambda Forecast API & EventBridge Scheduling |
-| [**Week 10**](1.10-Week10/) | Jun 22 - Jun 28 | Web Portal Integration: Global Fashion Retail Portal & RBAC Security |
-| [**Week 11**](1.11-Week11/) | Jun 29 - Jul 5 | Application Deployment: Web App Deployment on EC2 Server |
-| [**Week 12**](1.12-Week12/) | Jul 6 - Jul 15 | Retrospective: Project Demo & AWS Resource Cleanup |
+**Week 1**: [AWS Onboarding, Account Setup, and Guided Console Tasks](1.1-Week1/)
+
+**Week 2**: [AWS CLI, CloudShell, Security MFA, and IAM Administration](1.2-Week2/)
+
+**Week 3**: [VPC Networking, Route Tables, NAT Gateways, and EICE SSH](1.3-Week3/)
+
+**Week 4**: [Capstone Ideation, Project Scoping, and Retail Data Flow Planning](1.4-Week4/)
+
+**Week 5**: [Hybrid DNS Resolver, VPC Peering, and AWS Transit Gateway Network](1.5-Week5/)
+
+**Week 6**: [EC2 Instance Classes, EBS Storage, and AWS Backup Schedule](1.6-Week6/)
+
+**Week 7**: [AWS Community Day, S3 Static Web Hosting, Versioning & CRR](1.7-Week7/)
+
+**Week 8**: [Disaster Recovery Strategies, FSx for Windows, and Active Directory](1.8-Week8/)
+
+**Week 9**: [Security Hub Audits, Least Privilege Lambda, and AWS KMS Encryption](1.9-Week9/)
+
+**Week 10**: [Overall System Architecture, Edge Security, and FinOps Pricing](1.10-Week10/)
+
+**Week 11**: [VPC Database Setup, AWS Glue ETL Pipeline, and XGBoost Model Training](1.11-Week11/)
+
+**Week 12**: [Glassmorphism Web Portal, Reverse Proxy Nginx, SSL, and E2E Cloud Testing](1.12-Week12/)
+
+---

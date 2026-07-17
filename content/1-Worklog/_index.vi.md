@@ -1,28 +1,37 @@
 ---
 title: "Nhật ký công việc"
-date: 2024-06-08
+date: 2024-06-30
 weight: 1
 chapter: false
 pre: " <b> 1. </b> "
 ---
 
-Đây là nhật ký công việc của mình trong suốt chương trình thực tập **First Cloud AI Journey (FCAJ)** - chương trình thực tập tập trung vào Cloud và AI trên nền tảng AWS. Mỗi nhật ký tuần ghi lại mục tiêu, các công việc triển khai từ Thứ Hai đến Thứ Sáu, và kết quả đạt được.
-
-Chương trình kéo dài **12 tuần** (20/04 - 15/07/2026), bao gồm các nội dung từ cơ bản đến nâng cao về điện toán đám mây, data engineering, analytics, bảo mật và kiến trúc hệ thống trên AWS.
+Trong suốt quá trình thực tập tại AWS Việt Nam dưới sự hướng dẫn của anh Nguyễn Gia Hưng, em đã ghi chép nhật ký công việc hàng tuần. Qua 12 tuần thực tập, em đã đi từ các bước làm quen hạ tầng cloud cơ bản đến thiết kế, lập trình và triển khai thực tế một pipeline dự báo học máy tự động cùng ứng dụng web bán lẻ hoàn chỉnh trên AWS.
 
 ---
 
-| Tuần | Khoảng thời gian | Nội dung tập trung |
-|------|-----------------|-------------------|
-| [**Tuần 1**](1.1-Week1/) | 20/4 - 26/4 | Thiết lập tài khoản, nhận credits, hoàn thành 5 task thực hành nền tảng (EC2, Bedrock, Budgets, Lambda, RDS) |
-| [**Tuần 2**](1.2-Week2/) | 27/4 - 3/5 | Giám sát chi phí đa lớp, Advanced Analytics & Lý thuyết nền tảng AWS |
-| [**Tuần 3**](1.3-Week3/) | 4/5 - 10/5 | Lập kế hoạch kiến trúc & Tổng quan bài thực hành Workshop |
-| [**Tuần 4**](1.4-Week4/) | 11/5 - 17/5 | Thiết lập hệ thống mạng: CloudFront & Application Load Balancer (ALB) |
-| [**Tuần 5**](1.5-Week5/) | 18/5 - 24/5 | Thiết lập hệ thống mạng: EC2 Web Server, Target Group & Auto Scaling Group |
-| [**Tuần 6**](1.6-Week6/) | 25/5 - 31/5 | Thiết lập cơ sở dữ liệu: RDS Business DB, Training DB & Cấu hình bảo mật |
-| [**Tuần 7**](1.7-Week7/) | 1/6 - 7/6 | Kỹ nghệ dữ liệu: Tác vụ AWS Glue ETL & Trích xuất dữ liệu thô (Raw Ingestion) |
-| [**Tuần 8**](1.8-Week8/) | 8/6 - 14/6 | Học máy: Xây dựng Script huấn luyện mô hình ML & Lưu trữ model trên S3 |
-| [**Tuần 9**](1.9-Week9/) | 15/6 - 21/6 | Tích hợp Serverless: Hàm Lambda dự báo API & Lập lịch EventBridge tự động |
-| [**Tuần 10**](1.10-Week10/) | 22/6 - 28/6 | Tích hợp Cổng thông tin Web Portal: Thiết lập giao diện admin & Bảo mật RBAC |
-| [**Tuần 11**](1.11-Week11/) | 29/6 - 5/7 | Triển khai ứng dụng: Triển khai ứng dụng Web bán lẻ thời trang lên máy chủ EC2 |
-| [**Tuần 12**](1.12-Week12/) | 6/7 - 15/7 | Tổng kết báo cáo: Video Demo ứng dụng & Dọn dẹp tài nguyên trên AWS |
+**Tuần 1**: [Khởi đầu chương trình FCAJ, Nhận Credit & 5 Bài Lab Cơ bản](1.1-Week1/)
+
+**Tuần 2**: [AWS CLI, CloudShell, Cấu hình MFA & Quản trị IAM](1.2-Week2/)
+
+**Tuần 3**: [Hạ tầng mạng VPC, Route Table, NAT Gateway & Kết nối EICE SSH](1.3-Week3/)
+
+**Tuần 4**: [Đề xuất Ý tưởng Capstone Project & Thiết kế Luồng Dữ liệu Bán lẻ](1.4-Week4/)
+
+**Tuần 5**: [Cấu hình Hybrid DNS, Liên thông VPC Peering & AWS Transit Gateway](1.5-Week5/)
+
+**Tuần 6**: [Đánh giá EC2 Instance Types, EBS Storage & AWS Backup](1.6-Week6/)
+
+**Tuần 7**: [Tham dự AWS Community Day, Cấu hình S3 Website Hosting & CRR](1.7-Week7/)
+
+**Tuần 8**: [Chiến lược Disaster Recovery & Triển khai FSx for Windows Server](1.8-Week8/)
+
+**Tuần 9**: [AWS Security Hub, Phân quyền Lambda & Mã hóa AWS KMS](1.9-Week9/)
+
+**Tuần 10**: [Thiết kế Kiến trúc Hệ thống, Edge Security & Tính toán FinOps](1.10-Week10/)
+
+**Tuần 11**: [Triển khai RDS Database, AWS Glue Spark ETL & Huấn luyện XGBoost](1.11-Week11/)
+
+**Tuần 12**: [Hoàn thiện Web Portal Glassmorphism, Reverse Proxy Nginx, SSL & E2E Test](1.12-Week12/)
+
+---

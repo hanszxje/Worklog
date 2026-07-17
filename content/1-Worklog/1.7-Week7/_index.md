@@ -1,6 +1,6 @@
 ---
 title: "Week 7"
-date: 2026-06-07
+date: 2026-06-01
 weight: 7
 chapter: false
 pre: " <b> 1.7. </b> "
@@ -16,12 +16,12 @@ pre: " <b> 1.7. </b> "
 
 | Day | Task | Date |
 |---|---|---|
-| Monday | Networked with local AWS community engineers and collected technology insights. | Jun 08 |
-| Tuesday | Wrote a technical event summary and published a blog post sharing community day learnings. | Jun 09 |
-| Wednesday | Researched Amazon S3 static website hosting, Object Versioning, and S3 lifecycle transit policies. | Jun 10 |
-| Thursday | Configured Cross-Region Replication (CRR) on a test S3 bucket, verifying copy replication to another AWS Region. | Jun 11 |
-| Friday | Perform validation tests on object restoration lifecycle rules inside the replication bucket. | Jun 12 |
-| Saturday | Attended the AWS First Cloud AI Journey Community Day technology event in Ho Chi Minh City. | Jun 13 |
+| Monday | Networked with local AWS community engineers and collected technology insights. | Jun 01 |
+| Tuesday | Wrote a technical event summary and published a blog post sharing community day learnings. | Jun 02 |
+| Wednesday | Researched Amazon S3 static website hosting, Object Versioning, and S3 lifecycle transit policies. | Jun 03 |
+| Thursday | Configured Cross-Region Replication (CRR) on a test S3 bucket, verifying copy replication to another AWS Region. | Jun 04 |
+| Friday | Perform validation tests on object restoration lifecycle rules inside the replication bucket. | Jun 05 |
+| Saturday | Attended the AWS First Cloud AI Journey Community Day technology event in Ho Chi Minh City. | Jun 06 |
 
 **Weekly results achieved:**
 - **Monday:**

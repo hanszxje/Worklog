@@ -1,6 +1,6 @@
 ---
 title: "Tuần 9"
-date: 2026-06-21
+date: 2026-06-15
 weight: 9
 chapter: false
 pre: " <b> 1.9. </b> "
@@ -16,11 +16,11 @@ pre: " <b> 1.9. </b> "
 
 | Thứ | Công việc | Ngày |
 |---|---|---|
-| Thứ Hai | Thực hành Lab 18, kích hoạt AWS Security Hub và cấu hình bộ quét bảo mật theo tiêu chuẩn CIS AWS Foundations. | 22/6 |
-| Thứ Ba | Thực hành Lab 22, cấu hình IAM Role thực thi và phân vùng Security Group an toàn cho hàm Lambda. | 23/6 |
-| Thứ Tư | Học Module 06 về Database. So sánh CSDL quan hệ RDS/Aurora với giải pháp lưu trữ cache ElastiCache. | 24/6 |
-| Thứ Năm | Thực hành Lab 28 và Lab 30, tìm hiểu phân quyền IAM theo Region và giới hạn quyền hạn Permission Boundaries. | 25/6 |
-| Thứ Sáu | Thực hành Lab 33, cấu hình mã hóa KMS cho S3 bucket và thiết lập CloudTrail ghi nhật ký cuộc gọi API. | 26/6 |
+| Thứ Hai | Thực hành Lab 18, kích hoạt AWS Security Hub và cấu hình bộ quét bảo mật theo tiêu chuẩn CIS AWS Foundations. | 15/6 |
+| Thứ Ba | Thực hành Lab 22, cấu hình IAM Role thực thi và phân vùng Security Group an toàn cho hàm Lambda. | 16/6 |
+| Thứ Tư | Học Module 06 về Database. So sánh CSDL quan hệ RDS/Aurora với giải pháp lưu trữ cache ElastiCache. | 17/6 |
+| Thứ Năm | Thực hành Lab 28 và Lab 30, tìm hiểu phân quyền IAM theo Region và giới hạn quyền hạn Permission Boundaries. | 18/6 |
+| Thứ Sáu | Thực hành Lab 33, cấu hình mã hóa KMS cho S3 bucket và thiết lập CloudTrail ghi nhật ký cuộc gọi API. | 19/6 |
 
 **Kết quả đạt được trong tuần là gì:**
 - **Thứ Hai:**

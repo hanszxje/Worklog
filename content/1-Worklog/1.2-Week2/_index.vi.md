@@ -1,6 +1,6 @@
 ---
 title: "Tuần 2"
-date: 2026-05-03
+date: 2026-04-27
 weight: 2
 chapter: false
 pre: " <b> 1.2. </b> "
@@ -16,11 +16,11 @@ pre: " <b> 1.2. </b> "
 
 | Thứ | Công việc | Ngày |
 |---|---|---|
-| Thứ Hai | Khám phá giao diện tổng thể của AWS Management Console và tìm hiểu cấu trúc hạ tầng toàn cầu của AWS. | 4/5 |
-| Thứ Ba | Cài đặt gói AWS CLI lên máy cá nhân, cấu hình thông số kết nối bảo mật và thực hành trên CloudShell. | 5/5 |
-| Thứ Tư | Thiết lập xác thực đa yếu tố (MFA/2FA) cho tài khoản Root sử dụng phần mềm Google Authenticator. | 6/5 |
-| Thứ Năm | Tìm hiểu lý thuyết về IAM Policies, IAM Roles và cấu trúc viết mã chính sách bảo mật JSON. | 7/5 |
-| Thứ Sáu | Tạo tài khoản phụ IAM User cho lập trình viên, đưa vào nhóm admin và kiểm tra phân quyền truy cập. | 8/5 |
+| Thứ Hai | Khám phá giao diện tổng thể của AWS Management Console và tìm hiểu cấu trúc hạ tầng toàn cầu của AWS. | 27/4 |
+| Thứ Ba | Cài đặt gói AWS CLI lên máy cá nhân, cấu hình thông số kết nối bảo mật và thực hành trên CloudShell. | 28/4 |
+| Thứ Tư | Thiết lập xác thực đa yếu tố (MFA/2FA) cho tài khoản Root sử dụng phần mềm Google Authenticator. | 29/4 |
+| Thứ Năm | Tìm hiểu lý thuyết về IAM Policies, IAM Roles và cấu trúc viết mã chính sách bảo mật JSON. | 30/4 |
+| Thứ Sáu | Tạo tài khoản phụ IAM User cho lập trình viên, đưa vào nhóm admin và kiểm tra phân quyền truy cập. | 1/5 |
 
 **Kết quả đạt được trong tuần là gì:**
 - **Thứ Hai:**

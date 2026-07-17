@@ -1,6 +1,6 @@
 ---
 title: "Tuần 10"
-date: 2026-06-28
+date: 2026-06-22
 weight: 10
 chapter: false
 pre: " <b> 1.10. </b> "
@@ -16,11 +16,11 @@ pre: " <b> 1.10. </b> "
 
 | Thứ | Công việc | Ngày |
 |---|---|---|
-| Thứ Hai | Vẽ sơ đồ kiến trúc vận hành tổng thể hệ thống, phân chia luồng đi của người dùng đến máy chủ web. | 29/6 |
-| Thứ Ba | Thiết kế lớp bảo mật vòng ngoài, kết hợp phân phối nội dung qua CloudFront và tường lửa AWS WAF. | 30/6 |
-| Thứ Tư | Thiết kế luồng xử lý ETL bất đồng bộ, sử dụng AWS Glue trích xuất dữ liệu từ RDS PostgreSQL sang S3. | 1/7 |
-| Thứ Năm | Đánh giá và tối ưu hóa kiến trúc hạ tầng dựa trên 6 trụ cột của AWS Well-Architected Framework. | 2/7 |
-| Thứ Sáu | Tính toán và tối ưu hóa chi phí sử dụng hạ tầng AWS bằng công cụ AWS Pricing Calculator. | 3/7 |
+| Thứ Hai | Vẽ sơ đồ kiến trúc vận hành tổng thể hệ thống, phân chia luồng đi của người dùng đến máy chủ web. | 22/6 |
+| Thứ Ba | Thiết kế lớp bảo mật vòng ngoài, kết hợp phân phối nội dung qua CloudFront và tường lửa AWS WAF. | 23/6 |
+| Thứ Tư | Thiết kế luồng xử lý ETL bất đồng bộ, sử dụng AWS Glue trích xuất dữ liệu từ RDS PostgreSQL sang S3. | 24/6 |
+| Thứ Năm | Đánh giá và tối ưu hóa kiến trúc hạ tầng dựa trên 6 trụ cột của AWS Well-Architected Framework. | 25/6 |
+| Thứ Sáu | Tính toán và tối ưu hóa chi phí sử dụng hạ tầng AWS bằng công cụ AWS Pricing Calculator. | 26/6 |
 
 **Kết quả đạt được trong tuần là gì:**
 - **Thứ Hai:**

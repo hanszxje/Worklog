@@ -1,6 +1,6 @@
 ---
 title: "Week 6"
-date: 2026-05-31
+date: 2026-05-25
 weight: 6
 chapter: false
 pre: " <b> 1.6. </b> "
@@ -16,11 +16,11 @@ pre: " <b> 1.6. </b> "
 
 | Day | Task | Date |
 |---|---|---|
-| Monday | Researched Amazon EC2 Instance families (General Purpose, Compute Optimized, Memory Optimized) and chip architectures. | Jun 01 |
-| Tuesday | Studied Elastic Block Store (EBS) volumes (gp2 vs gp3 performance, provisioned IOPS) and transient Instance Store. | Jun 02 |
-| Wednesday | Studied Auto Scaling Groups (ASG) scaling policies and Elastic Load Balancing (ALB/NLB) path-based routing rules. | Jun 03 |
-| Thursday | Researched shared file storage options on AWS, comparing Amazon EFS (Linux NFS) and Amazon FSx (Windows SMB). | Jun 04 |
-| Friday | Executed Lab 13, configuring AWS Backup plans, lifecycle rules (cold storage transition), and ran file restoration tests. | Jun 05 |
+| Monday | Researched Amazon EC2 Instance families (General Purpose, Compute Optimized, Memory Optimized) and chip architectures. | May 25 |
+| Tuesday | Studied Elastic Block Store (EBS) volumes (gp2 vs gp3 performance, provisioned IOPS) and transient Instance Store. | May 26 |
+| Wednesday | Studied Auto Scaling Groups (ASG) scaling policies and Elastic Load Balancing (ALB/NLB) path-based routing rules. | May 27 |
+| Thursday | Researched shared file storage options on AWS, comparing Amazon EFS (Linux NFS) and Amazon FSx (Windows SMB). | May 28 |
+| Friday | Executed Lab 13, configuring AWS Backup plans, lifecycle rules (cold storage transition), and ran file restoration tests. | May 29 |
 
 **Weekly results achieved:**
 - **Monday:**

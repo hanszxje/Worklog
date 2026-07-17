@@ -1,6 +1,6 @@
 ---
 title: "Week 10"
-date: 2026-06-28
+date: 2026-06-22
 weight: 10
 chapter: false
 pre: " <b> 1.10. </b> "
@@ -16,11 +16,11 @@ pre: " <b> 1.10. </b> "
 
 | Day | Task | Date |
 |---|---|---|
-| Monday | Designed the overall system runtime architecture diagram, mapping client traffic to compute servers. | Jun 29 |
-| Tuesday | Designed the Edge Security layers, combining Amazon CloudFront CDN with AWS WAF firewall protections. | Jun 30 |
-| Wednesday | Designed the asynchronous ETL pipeline architecture, mapping Glue Jobs connecting RDS PostgreSQL to S3. | Jul 01 |
-| Thursday | Evaluated the system architecture designs against the 6 pillars of the AWS Well-Architected Framework. | Jul 02 |
-| Friday | Estimated monthly running costs of all planned resources using the AWS Pricing Calculator. | Jul 03 |
+| Monday | Designed the overall system runtime architecture diagram, mapping client traffic to compute servers. | Jun 22 |
+| Tuesday | Designed the Edge Security layers, combining Amazon CloudFront CDN with AWS WAF firewall protections. | Jun 23 |
+| Wednesday | Designed the asynchronous ETL pipeline architecture, mapping Glue Jobs connecting RDS PostgreSQL to S3. | Jun 24 |
+| Thursday | Evaluated the system architecture designs against the 6 pillars of the AWS Well-Architected Framework. | Jun 25 |
+| Friday | Estimated monthly running costs of all planned resources using the AWS Pricing Calculator. | Jun 26 |
 
 **Weekly results achieved:**
 - **Monday:**

@@ -1,6 +1,6 @@
 ---
 title: "Tuần 6"
-date: 2026-05-31
+date: 2026-05-25
 weight: 6
 chapter: false
 pre: " <b> 1.6. </b> "
@@ -16,11 +16,11 @@ pre: " <b> 1.6. </b> "
 
 | Thứ | Công việc | Ngày |
 |---|---|---|
-| Thứ Hai | Tìm hiểu phân loại máy chủ EC2 (General Purpose, Compute/Memory Optimized) và các kiến trúc vi xử lý đi kèm. | 1/6 |
-| Thứ Ba | Nghiên cứu ổ đĩa Elastic Block Store (EBS), so sánh gp2/gp3, IOPS và bộ nhớ tạm Instance Store. | 2/6 |
-| Thứ Tư | Tìm hiểu cơ chế co giãn tự động Auto Scaling và định tuyến cân bằng tải Elastic Load Balancing. | 3/6 |
-| Thứ Năm | Nghiên cứu giải pháp chia sẻ dữ liệu qua Amazon EFS (Linux NFS) và Amazon FSx (Windows SMB). | 4/6 |
-| Thứ Sáu | Thực hành Lab 13, thiết lập kế hoạch sao lưu AWS Backup, cấu hình vòng đời dữ liệu và chạy thử khôi phục. | 5/6 |
+| Thứ Hai | Tìm hiểu phân loại máy chủ EC2 (General Purpose, Compute/Memory Optimized) và các kiến trúc vi xử lý đi kèm. | 25/5 |
+| Thứ Ba | Nghiên cứu ổ đĩa Elastic Block Store (EBS), so sánh gp2/gp3, IOPS và bộ nhớ tạm Instance Store. | 26/5 |
+| Thứ Tư | Tìm hiểu cơ chế co giãn tự động Auto Scaling và định tuyến cân bằng tải Elastic Load Balancing. | 27/5 |
+| Thứ Năm | Nghiên cứu giải pháp chia sẻ dữ liệu qua Amazon EFS (Linux NFS) và Amazon FSx (Windows SMB). | 28/5 |
+| Thứ Sáu | Thực hành Lab 13, thiết lập kế hoạch sao lưu AWS Backup, cấu hình vòng đời dữ liệu và chạy thử khôi phục. | 29/5 |
 
 **Kết quả đạt được trong tuần là gì:**
 - **Thứ Hai:**

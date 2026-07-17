@@ -1,6 +1,6 @@
 ---
 title: "Week 9"
-date: 2026-06-21
+date: 2026-06-15
 weight: 9
 chapter: false
 pre: " <b> 1.9. </b> "
@@ -16,11 +16,11 @@ pre: " <b> 1.9. </b> "
 
 | Day | Task | Date |
 |---|---|---|
-| Monday | Executed Lab 18, enabling AWS Security Hub and configuring standard CIS AWS Foundations benchmarks. | Jun 22 |
-| Tuesday | Executed Lab 22, creating a secure Lambda execution role and restricting security group ports. | Jun 23 |
-| Wednesday | Studied Database classifications on AWS, comparing relational RDS/Aurora against caching solutions like ElastiCache. | Jun 24 |
-| Thursday | Executed Lab 28 and Lab 30, exploring region-restricted IAM policies and Permission Boundaries. | Jun 25 |
-| Friday | Executed Lab 33, setting up AWS KMS key encryption on S3 buckets and configuring AWS CloudTrail log trails. | Jun 26 |
+| Monday | Executed Lab 18, enabling AWS Security Hub and configuring standard CIS AWS Foundations benchmarks. | Jun 15 |
+| Tuesday | Executed Lab 22, creating a secure Lambda execution role and restricting security group ports. | Jun 16 |
+| Wednesday | Studied Database classifications on AWS, comparing relational RDS/Aurora against caching solutions like ElastiCache. | Jun 17 |
+| Thursday | Executed Lab 28 and Lab 30, exploring region-restricted IAM policies and Permission Boundaries. | Jun 18 |
+| Friday | Executed Lab 33, setting up AWS KMS key encryption on S3 buckets and configuring AWS CloudTrail log trails. | Jun 19 |
 
 **Weekly results achieved:**
 - **Monday:**

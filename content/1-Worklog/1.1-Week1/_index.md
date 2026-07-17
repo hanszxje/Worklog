@@ -1,6 +1,6 @@
 ---
 title: "Week 1"
-date: 2026-04-26
+date: 2026-04-20
 weight: 1
 chapter: false
 pre: " <b> 1.1. </b> "
@@ -16,12 +16,12 @@ pre: " <b> 1.1. </b> "
 
 | Day | Task | Date |
 |---|---|---|
-| Monday | Learned the overview of AWS Cloud computing technology and the pay-as-you-go pricing model. | Apr 27 |
-| Tuesday | Created a personal AWS Free Tier account for the internship, set up credit card payment details, and verified identity. | Apr 28 |
-| Wednesday | Configured cost management alerts (AWS Budgets) and claimed $200 in AWS Cloud Credits ($100 signup + $100 promo). | Apr 29 |
-| Thursday | Conducted preliminary research on the core cloud compute infrastructure, focusing on EC2 instance setup and S3 bucket structures. | Apr 30 |
-| Friday | Researched RDS databases and IAM permission boundary configurations. Performed teardown of all test instances. | May 01 |
-| Saturday | Attended the Kickoff event of the AWS First Cloud AI Journey (FCAJ) program. | May 02 |
+| Monday | Learned the overview of AWS Cloud computing technology and the pay-as-you-go pricing model. | Apr 20 |
+| Tuesday | Created a personal AWS Free Tier account for the internship, set up credit card payment details, and verified identity. | Apr 21 |
+| Wednesday | Configured cost management alerts (AWS Budgets) and claimed $200 in AWS Cloud Credits ($100 signup + $100 promo). | Apr 22 |
+| Thursday | Conducted preliminary research on the core cloud compute infrastructure, focusing on EC2 instance setup and S3 bucket structures. | Apr 23 |
+| Friday | Researched RDS databases and IAM permission boundary configurations. Performed teardown of all test instances. | Apr 24 |
+| Saturday | Attended the Kickoff event of the AWS First Cloud AI Journey (FCAJ) program. | Apr 25 |
 
 **Weekly results achieved:**
 - **Monday:**

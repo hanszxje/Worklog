@@ -1,6 +1,6 @@
 ---
 title: "Tuần 7"
-date: 2026-06-07
+date: 2026-06-01
 weight: 7
 chapter: false
 pre: " <b> 1.7. </b> "
@@ -16,12 +16,12 @@ pre: " <b> 1.7. </b> "
 
 | Thứ | Công việc | Ngày |
 |---|---|---|
-| Thứ Hai | Giao lưu và học hỏi kinh nghiệm từ các chuyên gia AWS và các lập trình viên khác tại sự kiện. | 8/6 |
-| Thứ Ba | Tổng hợp nội dung sự kiện và viết bài đăng blog chia sẻ các kiến thức thu hoạch được. | 9/6 |
-| Thứ Tư | Nghiên cứu tính năng S3 Static Website Hosting, Object Versioning và chính sách vòng đời dữ liệu S3. | 10/6 |
-| Thứ Năm | Cấu hình thử nghiệm tính năng sao chép dữ liệu liên vùng Cross-Region Replication (CRR) trên S3 bucket. | 11/6 |
-| Thứ Sáu | Thực hiện các bài kiểm tra xác thực vòng đời khôi phục dữ liệu bên trong bucket sao chép. | 12/6 |
-| Thứ Bảy | Tham gia sự kiện công nghệ AWS First Cloud AI Journey Community Day tại TP. HCM. | 13/6 |
+| Thứ Hai | Giao lưu và học hỏi kinh nghiệm từ các chuyên gia AWS và các lập trình viên khác tại sự kiện. | 1/6 |
+| Thứ Ba | Tổng hợp nội dung sự kiện và viết bài đăng blog chia sẻ các kiến thức thu hoạch được. | 2/6 |
+| Thứ Tư | Nghiên cứu tính năng S3 Static Website Hosting, Object Versioning và chính sách vòng đời dữ liệu S3. | 3/6 |
+| Thứ Năm | Cấu hình thử nghiệm tính năng sao chép dữ liệu liên vùng Cross-Region Replication (CRR) trên S3 bucket. | 4/6 |
+| Thứ Sáu | Thực hiện các bài kiểm tra xác thực vòng đời khôi phục dữ liệu bên trong bucket sao chép. | 5/6 |
+| Thứ Bảy | Tham gia sự kiện công nghệ AWS First Cloud AI Journey Community Day tại TP. HCM. | 6/6 |
 
 **Kết quả đạt được trong tuần là gì:**
 - **Thứ Hai:**

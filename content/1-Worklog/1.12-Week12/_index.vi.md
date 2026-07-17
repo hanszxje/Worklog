@@ -1,6 +1,6 @@
 ---
 title: "Tuần 12"
-date: 2026-07-12
+date: 2026-07-06
 weight: 12
 chapter: false
 pre: " <b> 1.12. </b> "
@@ -17,11 +17,11 @@ pre: " <b> 1.12. </b> "
 
 | Thứ | Công việc | Ngày |
 |---|---|---|
-| Thứ Hai | Lập trình giao diện Dashboard ReactJS, vẽ biểu đồ Plotly thể hiện kết quả doanh số thực tế và dự báo. | 13/7 |
-| Thứ Ba | Khởi tạo máy chủ EC2 Ubuntu. Cloned mã nguồn, cấu hình biến môi trường và chạy nền ứng dụng bằng PM2. | 14/7 |
-| Thứ Tư | Cài đặt và cấu hình máy chủ Nginx làm Reverse Proxy định tuyến cuộc gọi cổng 80 về cổng 3000. | 15/7 |
-| Thứ Năm | Cấu hình tên miền trỏ về IP máy chủ, chạy Certbot Let's Encrypt cài đặt chứng chỉ bảo mật HTTPS SSL. | 16/7 |
-| Thứ Sáu | Kiểm thử toàn trình hệ thống với các vai trò người dùng khác nhau. Hoàn thiện các tài liệu báo cáo thực tập. | 17/7 |
+| Thứ Hai | Lập trình giao diện Dashboard ReactJS, vẽ biểu đồ Plotly thể hiện kết quả doanh số thực tế và dự báo. | 6/7 |
+| Thứ Ba | Khởi tạo máy chủ EC2 Ubuntu. Cloned mã nguồn, cấu hình biến môi trường và chạy nền ứng dụng bằng PM2. | 7/7 |
+| Thứ Tư | Cài đặt và cấu hình máy chủ Nginx làm Reverse Proxy định tuyến cuộc gọi cổng 80 về cổng 3000. | 8/7 |
+| Thứ Năm | Cấu hình tên miền trỏ về IP máy chủ, chạy Certbot Let's Encrypt cài đặt chứng chỉ bảo mật HTTPS SSL. | 9/7 |
+| Thứ Sáu | Kiểm thử toàn trình hệ thống với các vai trò người dùng khác nhau. Hoàn thiện các tài liệu báo cáo thực tập. | 10/7 |
 
 **Kết quả đạt được trong tuần là gì:**
 - **Thứ Hai:**

@@ -1,6 +1,6 @@
 ---
 title: "Week 3"
-date: 2026-05-10
+date: 2026-05-04
 weight: 3
 chapter: false
 pre: " <b> 1.3. </b> "
@@ -16,11 +16,11 @@ pre: " <b> 1.3. </b> "
 
 | Day | Task | Date |
 |---|---|---|
-| Monday | Studied Virtual Private Cloud (VPC) core concepts, routing tables, public subnets, and internet gateway attachments. | May 11 |
-| Tuesday | Researched NAT Gateways and compared Public vs Private NAT setups. Planned allocation of Elastic IPs. | May 12 |
-| Wednesday | Studied EC2 Instance Connect Endpoint (EICE) mechanism. Configured endpoint boundaries in private subnets. | May 13 |
-| Thursday | Configured Inbound/Outbound Rules of the VPC Security Groups to authorize EICE traffic. | May 14 |
-| Friday | Executed the VPC Lab, deploying a NAT Gateway and EICE endpoint. Audited network routing by running outbound updates. | May 15 |
+| Monday | Studied Virtual Private Cloud (VPC) core concepts, routing tables, public subnets, and internet gateway attachments. | May 04 |
+| Tuesday | Researched NAT Gateways and compared Public vs Private NAT setups. Planned allocation of Elastic IPs. | May 05 |
+| Wednesday | Studied EC2 Instance Connect Endpoint (EICE) mechanism. Configured endpoint boundaries in private subnets. | May 06 |
+| Thursday | Configured Inbound/Outbound Rules of the VPC Security Groups to authorize EICE traffic. | May 07 |
+| Friday | Executed the VPC Lab, deploying a NAT Gateway and EICE endpoint. Audited network routing by running outbound updates. | May 08 |
 
 **Weekly results achieved:**
 - **Monday:**

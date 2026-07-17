@@ -1,6 +1,6 @@
 ---
 title: "Tuần 1"
-date: 2026-04-26
+date: 2026-04-20
 weight: 1
 chapter: false
 pre: " <b> 1.1. </b> "
@@ -16,12 +16,12 @@ pre: " <b> 1.1. </b> "
 
 | Thứ | Công việc | Ngày |
 |---|---|---|
-| Thứ Hai | Tìm hiểu tổng quan về điện toán đám mây AWS và mô hình tính phí pay-as-you-go. | 27/4 |
-| Thứ Ba | Khởi tạo tài khoản AWS Free Tier cá nhân phục vụ thực tập, thiết lập phương thức thanh toán thẻ và xác thực danh tính. | 28/4 |
-| Thứ Tư | Cấu hình cảnh báo quản lý ngân sách (AWS Budgets) và nhận tổng cộng 200 USD AWS Credit hỗ trợ học tập. | 29/4 |
-| Thứ Năm | Nghiên cứu sơ bộ nhóm dịch vụ cơ sở hạ tầng tính toán đám mây cốt lõi, tập trung vào máy ảo EC2 và lưu trữ tệp tin S3. | 30/4 |
-| Thứ Sáu | Tìm hiểu lý thuyết cơ bản về cơ sở dữ liệu RDS và các quy tắc phân quyền IAM, dọn dẹp sạch các tài nguyên thử nghiệm. | 1/5 |
-| Thứ Bảy | Tham gia buổi Kickoff chương trình AWS First Cloud AI Journey (FCAJ). | 2/5 |
+| Thứ Hai | Tìm hiểu tổng quan về điện toán đám mây AWS và mô hình tính phí pay-as-you-go. | 20/4 |
+| Thứ Ba | Khởi tạo tài khoản AWS Free Tier cá nhân phục vụ thực tập, thiết lập phương thức thanh toán thẻ và xác thực danh tính. | 21/4 |
+| Thứ Tư | Cấu hình cảnh báo quản lý ngân sách (AWS Budgets) và nhận tổng cộng 200 USD AWS Credit hỗ trợ học tập. | 22/4 |
+| Thứ Năm | Nghiên cứu sơ bộ nhóm dịch vụ cơ sở hạ tầng tính toán đám mây cốt lõi, tập trung vào máy ảo EC2 và lưu trữ tệp tin S3. | 23/4 |
+| Thứ Sáu | Tìm hiểu lý thuyết cơ bản về cơ sở dữ liệu RDS và các quy tắc phân quyền IAM, dọn dẹp sạch các tài nguyên thử nghiệm. | 24/4 |
+| Thứ Bảy | Tham gia buổi Kickoff chương trình AWS First Cloud AI Journey (FCAJ). | 25/4 |
 
 **Kết quả đạt được trong tuần là gì:**
 - **Thứ Hai:**

@@ -1,6 +1,6 @@
 ---
 title: "Week 2"
-date: 2026-05-03
+date: 2026-04-27
 weight: 2
 chapter: false
 pre: " <b> 1.2. </b> "
@@ -16,11 +16,11 @@ pre: " <b> 1.2. </b> "
 
 | Day | Task | Date |
 |---|---|---|
-| Monday | Explored the AWS Management Console layout and researched the AWS Global Infrastructure layout. | May 04 |
-| Tuesday | Installed the AWS CLI package on local machine, configured security credentials, and launched CloudShell sessions. | May 05 |
-| Wednesday | Configured virtual Multi-Factor Authentication (MFA) on the Root Account using Google Authenticator. | May 06 |
-| Thursday | Studied IAM Policies, IAM Roles, and JSON policy structures. Designed a custom policy template. | May 07 |
-| Friday | Created a developer IAM User account, assigned it to an administrator group, and tested access restrictions. | May 08 |
+| Monday | Explored the AWS Management Console layout and researched the AWS Global Infrastructure layout. | Apr 27 |
+| Tuesday | Installed the AWS CLI package on local machine, configured security credentials, and launched CloudShell sessions. | Apr 28 |
+| Wednesday | Configured virtual Multi-Factor Authentication (MFA) on the Root Account using Google Authenticator. | Apr 29 |
+| Thursday | Studied IAM Policies, IAM Roles, and JSON policy structures. Designed a custom policy template. | Apr 30 |
+| Friday | Created a developer IAM User account, assigned it to an administrator group, and tested access restrictions. | May 01 |
 
 **Weekly results achieved:**
 - **Monday:**

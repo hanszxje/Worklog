@@ -1,6 +1,6 @@
 ---
 title: "Week 5"
-date: 2026-05-24
+date: 2026-05-18
 weight: 5
 chapter: false
 pre: " <b> 1.5. </b> "
@@ -16,11 +16,11 @@ pre: " <b> 1.5. </b> "
 
 | Day | Task | Date |
 |---|---|---|
-| Monday | Studied Hybrid DNS resolution mechanisms and Route 53 Resolver Outbound/Inbound Endpoints. | May 25 |
-| Tuesday | Studied VPC Peering and Transit Gateway theories, comparing configuration limits and network scalability. | May 26 |
-| Wednesday | Executed Lab 10, configuring Route 53 Resolver Endpoints and forwarding rules. | May 27 |
-| Thursday | Executed Lab 19, establishing a VPC Peering connection between two private subnets. Updated route tables. | May 28 |
-| Friday | Executed Lab 20, deploying an AWS Transit Gateway and attaching multiple VPC network subnets. | May 29 |
+| Monday | Studied Hybrid DNS resolution mechanisms and Route 53 Resolver Outbound/Inbound Endpoints. | May 18 |
+| Tuesday | Studied VPC Peering and Transit Gateway theories, comparing configuration limits and network scalability. | May 19 |
+| Wednesday | Executed Lab 10, configuring Route 53 Resolver Endpoints and forwarding rules. | May 20 |
+| Thursday | Executed Lab 19, establishing a VPC Peering connection between two private subnets. Updated route tables. | May 21 |
+| Friday | Executed Lab 20, deploying an AWS Transit Gateway and attaching multiple VPC network subnets. | May 22 |
 
 **Weekly results achieved:**
 - **Monday:**

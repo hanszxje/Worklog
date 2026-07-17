@@ -1,6 +1,6 @@
 ---
 title: "Tuần 5"
-date: 2026-05-24
+date: 2026-05-18
 weight: 5
 chapter: false
 pre: " <b> 1.5. </b> "
@@ -16,11 +16,11 @@ pre: " <b> 1.5. </b> "
 
 | Thứ | Công việc | Ngày |
 |---|---|---|
-| Thứ Hai | Nghiên cứu cơ chế phân giải tên miền Hybrid DNS và vai trò của cổng Route 53 Resolver Inbound/Outbound. | 25/5 |
-| Thứ Ba | Tìm hiểu lý thuyết liên thông mạng VPC Peering và giải pháp quản lý tập trung qua AWS Transit Gateway. | 26/5 |
-| Thứ Tư | Thực hành Lab 10, thiết lập các Route 53 Resolver Endpoints và cấu hình Rule điều hướng DNS. | 27/5 |
-| Thứ Năm | Thực hành Lab 19, thiết lập liên kết VPC Peering kết nối hai VPC. Cấu hình bảng định tuyến Route Table. | 28/5 |
-| Thứ Sáu | Thực hành Lab 20, khởi tạo một AWS Transit Gateway và liên kết (Attachment) các mạng VPC con. | 29/5 |
+| Thứ Hai | Nghiên cứu cơ chế phân giải tên miền Hybrid DNS và vai trò của cổng Route 53 Resolver Inbound/Outbound. | 18/5 |
+| Thứ Ba | Tìm hiểu lý thuyết liên thông mạng VPC Peering và giải pháp quản lý tập trung qua AWS Transit Gateway. | 19/5 |
+| Thứ Tư | Thực hành Lab 10, thiết lập các Route 53 Resolver Endpoints và cấu hình Rule điều hướng DNS. | 20/5 |
+| Thứ Năm | Thực hành Lab 19, thiết lập liên kết VPC Peering kết nối hai VPC. Cấu hình bảng định tuyến Route Table. | 21/5 |
+| Thứ Sáu | Thực hành Lab 20, khởi tạo một AWS Transit Gateway và liên kết (Attachment) các mạng VPC con. | 22/5 |
 
 **Kết quả đạt được trong tuần là gì:**
 - **Thứ Hai:**

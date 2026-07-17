@@ -1,6 +1,6 @@
 ---
 title: "Week 12"
-date: 2026-07-12
+date: 2026-07-06
 weight: 12
 chapter: false
 pre: " <b> 1.12. </b> "
@@ -17,11 +17,11 @@ pre: " <b> 1.12. </b> "
 
 | Day | Task | Date |
 |---|---|---|
-| Monday | Programmed the ReactJS frontend dashboard, integrating Plotly.js charts displaying actual vs forecast sales. | Jul 13 |
-| Tuesday | Provisioned production Ubuntu EC2 instance. Cloned codebase, configured environment variables, and configured PM2 runtime. | Jul 14 |
-| Wednesday | Installed and configured Nginx reverse proxy server policies on the production Ubuntu instance. | Jul 15 |
-| Thursday | Configured domain settings, ran Certbot Let's Encrypt client utilities to generate secure SSL certificates. | Jul 16 |
-| Friday | Conducted End-to-End integration testing across multiple user roles (Associate, Store Manager, Admin). Finalized reports. | Jul 17 |
+| Monday | Programmed the ReactJS frontend dashboard, integrating Plotly.js charts displaying actual vs forecast sales. | Jul 06 |
+| Tuesday | Provisioned production Ubuntu EC2 instance. Cloned codebase, configured environment variables, and configured PM2 runtime. | Jul 07 |
+| Wednesday | Installed and configured Nginx reverse proxy server policies on the production Ubuntu instance. | Jul 08 |
+| Thursday | Configured domain settings, ran Certbot Let's Encrypt client utilities to generate secure SSL certificates. | Jul 09 |
+| Friday | Conducted End-to-End integration testing across multiple user roles (Associate, Store Manager, Admin). Finalized reports. | Jul 10 |
 
 **Weekly results achieved:**
 - **Monday:**
